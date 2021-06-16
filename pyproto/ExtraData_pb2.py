@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto import Any_pb2 as pyproto_dot_Any__pb2
+from google.protobuf import any_pb2 as google_dot_protobuf_dot_any__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -20,9 +20,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x17pyproto/ExtraData.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x11pyproto/Any.proto\"\xa0\x01\n\tExtraData\x12\x41\n\x04\x64\x61ta\x18\x01 \x03(\x0b\x32\x33.com.tencent.qqlive.protocol.pb.ExtraData.DataEntry\x1aP\n\tDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x32\n\x05value\x18\x02 \x01(\x0b\x32#.com.tencent.qqlive.protocol.pb.Any:\x02\x38\x01\x62\x06proto3'
+  serialized_pb=b'\n\x17pyproto/ExtraData.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x19google/protobuf/any.proto\"\x91\x01\n\tExtraData\x12\x41\n\x04\x64\x61ta\x18\x01 \x03(\x0b\x32\x33.com.tencent.qqlive.protocol.pb.ExtraData.DataEntry\x1a\x41\n\tDataEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12#\n\x05value\x18\x02 \x01(\x0b\x32\x14.google.protobuf.Any:\x02\x38\x01\x62\x06proto3'
   ,
-  dependencies=[pyproto_dot_Any__pb2.DESCRIPTOR,])
+  dependencies=[google_dot_protobuf_dot_any__pb2.DESCRIPTOR,])
 
 
 
@@ -61,8 +61,8 @@ _EXTRADATA_DATAENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=159,
-  serialized_end=239,
+  serialized_start=167,
+  serialized_end=232,
 )
 
 _EXTRADATA = _descriptor.Descriptor(
@@ -92,11 +92,11 @@ _EXTRADATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=79,
-  serialized_end=239,
+  serialized_start=87,
+  serialized_end=232,
 )
 
-_EXTRADATA_DATAENTRY.fields_by_name['value'].message_type = pyproto_dot_Any__pb2._ANY
+_EXTRADATA_DATAENTRY.fields_by_name['value'].message_type = google_dot_protobuf_dot_any__pb2._ANY
 _EXTRADATA_DATAENTRY.containing_type = _EXTRADATA
 _EXTRADATA.fields_by_name['data'].message_type = _EXTRADATA_DATAENTRY
 DESCRIPTOR.message_types_by_name['ExtraData'] = _EXTRADATA

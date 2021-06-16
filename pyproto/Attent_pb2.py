@@ -11,10 +11,10 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from pyproto import AttentTimeConfigType_pb2 as pyproto_dot_AttentTimeConfigType__pb2
+from pyproto import AttentUIInfo_pb2 as pyproto_dot_AttentUIInfo__pb2
 from pyproto import AttentFakeDisplayInfo_pb2 as pyproto_dot_AttentFakeDisplayInfo__pb2
 from pyproto import CalendarItem_pb2 as pyproto_dot_CalendarItem__pb2
-from pyproto import AttentUIInfo_pb2 as pyproto_dot_AttentUIInfo__pb2
-from pyproto import AttentTimeConfigType_pb2 as pyproto_dot_AttentTimeConfigType__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -23,9 +23,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x14pyproto/Attent.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a#pyproto/AttentFakeDisplayInfo.proto\x1a\x1apyproto/CalendarItem.proto\x1a\x1apyproto/AttentUIInfo.proto\x1a\"pyproto/AttentTimeConfigType.proto\"\xd3\x04\n\x06\x41ttent\x12\x17\n\nattent_key\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x19\n\x0c\x61ttent_state\x18\x02 \x01(\x05H\x01\x88\x01\x01\x12\x18\n\x0bupdate_time\x18\x03 \x01(\x03H\x02\x88\x01\x01\x12K\n\x10\x61ttent_view_info\x18\x04 \x01(\x0b\x32,.com.tencent.qqlive.protocol.pb.AttentUIInfoH\x03\x88\x01\x01\x12U\n\x11\x66\x61ke_display_info\x18\x05 \x01(\x0b\x32\x35.com.tencent.qqlive.protocol.pb.AttentFakeDisplayInfoH\x04\x88\x01\x01\x12\x18\n\x0b\x61ttent_from\x18\x06 \x01(\tH\x05\x88\x01\x01\x12H\n\rcalendar_item\x18\x07 \x01(\x0b\x32,.com.tencent.qqlive.protocol.pb.CalendarItemH\x06\x88\x01\x01\x12Z\n\x17\x61ttent_time_config_type\x18\x08 \x01(\x0e\x32\x34.com.tencent.qqlive.protocol.pb.AttentTimeConfigTypeH\x07\x88\x01\x01\x42\r\n\x0b_attent_keyB\x0f\n\r_attent_stateB\x0e\n\x0c_update_timeB\x13\n\x11_attent_view_infoB\x14\n\x12_fake_display_infoB\x0e\n\x0c_attent_fromB\x10\n\x0e_calendar_itemB\x1a\n\x18_attent_time_config_typeb\x06proto3'
+  serialized_pb=b'\n\x14pyproto/Attent.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\"pyproto/AttentTimeConfigType.proto\x1a\x1apyproto/AttentUIInfo.proto\x1a#pyproto/AttentFakeDisplayInfo.proto\x1a\x1apyproto/CalendarItem.proto\"\xd3\x04\n\x06\x41ttent\x12\x17\n\nattent_key\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x19\n\x0c\x61ttent_state\x18\x02 \x01(\x05H\x01\x88\x01\x01\x12\x18\n\x0bupdate_time\x18\x03 \x01(\x03H\x02\x88\x01\x01\x12K\n\x10\x61ttent_view_info\x18\x04 \x01(\x0b\x32,.com.tencent.qqlive.protocol.pb.AttentUIInfoH\x03\x88\x01\x01\x12U\n\x11\x66\x61ke_display_info\x18\x05 \x01(\x0b\x32\x35.com.tencent.qqlive.protocol.pb.AttentFakeDisplayInfoH\x04\x88\x01\x01\x12\x18\n\x0b\x61ttent_from\x18\x06 \x01(\tH\x05\x88\x01\x01\x12H\n\rcalendar_item\x18\x07 \x01(\x0b\x32,.com.tencent.qqlive.protocol.pb.CalendarItemH\x06\x88\x01\x01\x12Z\n\x17\x61ttent_time_config_type\x18\x08 \x01(\x0e\x32\x34.com.tencent.qqlive.protocol.pb.AttentTimeConfigTypeH\x07\x88\x01\x01\x42\r\n\x0b_attent_keyB\x0f\n\r_attent_stateB\x0e\n\x0c_update_timeB\x13\n\x11_attent_view_infoB\x14\n\x12_fake_display_infoB\x0e\n\x0c_attent_fromB\x10\n\x0e_calendar_itemB\x1a\n\x18_attent_time_config_typeb\x06proto3'
   ,
-  dependencies=[pyproto_dot_AttentFakeDisplayInfo__pb2.DESCRIPTOR,pyproto_dot_CalendarItem__pb2.DESCRIPTOR,pyproto_dot_AttentUIInfo__pb2.DESCRIPTOR,pyproto_dot_AttentTimeConfigType__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_AttentTimeConfigType__pb2.DESCRIPTOR,pyproto_dot_AttentUIInfo__pb2.DESCRIPTOR,pyproto_dot_AttentFakeDisplayInfo__pb2.DESCRIPTOR,pyproto_dot_CalendarItem__pb2.DESCRIPTOR,])
 
 
 

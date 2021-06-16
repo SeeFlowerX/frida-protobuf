@@ -11,7 +11,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto import Any_pb2 as pyproto_dot_Any__pb2
+from google.protobuf import any_pb2 as google_dot_protobuf_dot_any__pb2
 from pyproto import OperationType_pb2 as pyproto_dot_OperationType__pb2
 
 
@@ -21,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x17pyproto/Operation.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x11pyproto/Any.proto\x1a\x1bpyproto/OperationType.proto\"\xde\x02\n\tOperation\x12J\n\x0eoperation_type\x18\x01 \x01(\x0e\x32-.com.tencent.qqlive.protocol.pb.OperationTypeH\x00\x88\x01\x01\x12;\n\toperation\x18\x02 \x01(\x0b\x32#.com.tencent.qqlive.protocol.pb.AnyH\x01\x88\x01\x01\x12N\n\x0breport_dict\x18\x03 \x03(\x0b\x32\x39.com.tencent.qqlive.protocol.pb.Operation.ReportDictEntry\x12\x16\n\treport_id\x18\x04 \x01(\tH\x02\x88\x01\x01\x1a\x31\n\x0fReportDictEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x42\x11\n\x0f_operation_typeB\x0c\n\n_operationB\x0c\n\n_report_idb\x06proto3'
+  serialized_pb=b'\n\x17pyproto/Operation.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x19google/protobuf/any.proto\x1a\x1bpyproto/OperationType.proto\"\xcf\x02\n\tOperation\x12J\n\x0eoperation_type\x18\x01 \x01(\x0e\x32-.com.tencent.qqlive.protocol.pb.OperationTypeH\x00\x88\x01\x01\x12,\n\toperation\x18\x02 \x01(\x0b\x32\x14.google.protobuf.AnyH\x01\x88\x01\x01\x12N\n\x0breport_dict\x18\x03 \x03(\x0b\x32\x39.com.tencent.qqlive.protocol.pb.Operation.ReportDictEntry\x12\x16\n\treport_id\x18\x04 \x01(\tH\x02\x88\x01\x01\x1a\x31\n\x0fReportDictEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x42\x11\n\x0f_operation_typeB\x0c\n\n_operationB\x0c\n\n_report_idb\x06proto3'
   ,
-  dependencies=[pyproto_dot_Any__pb2.DESCRIPTOR,pyproto_dot_OperationType__pb2.DESCRIPTOR,])
+  dependencies=[google_dot_protobuf_dot_any__pb2.DESCRIPTOR,pyproto_dot_OperationType__pb2.DESCRIPTOR,])
 
 
 
@@ -62,8 +62,8 @@ _OPERATION_REPORTDICTENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=362,
-  serialized_end=411,
+  serialized_start=355,
+  serialized_end=404,
 )
 
 _OPERATION = _descriptor.Descriptor(
@@ -129,13 +129,13 @@ _OPERATION = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=108,
-  serialized_end=458,
+  serialized_start=116,
+  serialized_end=451,
 )
 
 _OPERATION_REPORTDICTENTRY.containing_type = _OPERATION
 _OPERATION.fields_by_name['operation_type'].enum_type = pyproto_dot_OperationType__pb2._OPERATIONTYPE
-_OPERATION.fields_by_name['operation'].message_type = pyproto_dot_Any__pb2._ANY
+_OPERATION.fields_by_name['operation'].message_type = google_dot_protobuf_dot_any__pb2._ANY
 _OPERATION.fields_by_name['report_dict'].message_type = _OPERATION_REPORTDICTENTRY
 _OPERATION.oneofs_by_name['_operation_type'].fields.append(
   _OPERATION.fields_by_name['operation_type'])

@@ -3,8 +3,8 @@ syntax = "proto3";
 package com.tencent.qqlive.protocol.pb;
 
 import "pyproto/Operation.proto";
-import "pyproto/Poster.proto";
 import "pyproto/VideoIdSet.proto";
+import "pyproto/Poster.proto";
 
 message AttentFakeDisplayInfo {
     optional Poster poster = 1;

@@ -11,12 +11,12 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto import ExtraData_pb2 as pyproto_dot_ExtraData__pb2
-from pyproto import CSSStruct_pb2 as pyproto_dot_CSSStruct__pb2
 from pyproto import Operation_pb2 as pyproto_dot_Operation__pb2
-from pyproto import BlockType_pb2 as pyproto_dot_BlockType__pb2
-from pyproto import Any_pb2 as pyproto_dot_Any__pb2
+from pyproto import CSSStruct_pb2 as pyproto_dot_CSSStruct__pb2
 from pyproto import MarkLabelList_pb2 as pyproto_dot_MarkLabelList__pb2
+from pyproto import ExtraData_pb2 as pyproto_dot_ExtraData__pb2
+from pyproto import BlockType_pb2 as pyproto_dot_BlockType__pb2
+from google.protobuf import any_pb2 as google_dot_protobuf_dot_any__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -25,9 +25,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x13pyproto/Block.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x17pyproto/ExtraData.proto\x1a\x17pyproto/CSSStruct.proto\x1a\x17pyproto/Operation.proto\x1a\x17pyproto/BlockType.proto\x1a\x11pyproto/Any.proto\x1a\x1bpyproto/MarkLabelList.proto\"\x90\x08\n\x05\x42lock\x12\x42\n\nblock_type\x18\x01 \x01(\x0e\x32).com.tencent.qqlive.protocol.pb.BlockTypeH\x00\x88\x01\x01\x12\x1d\n\x10\x62lock_style_type\x18\x02 \x01(\x05H\x01\x88\x01\x01\x12\x42\n\ncss_struct\x18\x03 \x01(\x0b\x32).com.tencent.qqlive.protocol.pb.CSSStructH\x02\x88\x01\x01\x12\x36\n\x04\x64\x61ta\x18\x04 \x01(\x0b\x32#.com.tencent.qqlive.protocol.pb.AnyH\x03\x88\x01\x01\x12N\n\roperation_map\x18\x05 \x03(\x0b\x32\x37.com.tencent.qqlive.protocol.pb.Block.OperationMapEntry\x12X\n\x13mark_label_list_map\x18\x06 \x03(\x0b\x32;.com.tencent.qqlive.protocol.pb.Block.MarkLabelListMapEntry\x12J\n\x0breport_dict\x18\x07 \x03(\x0b\x32\x35.com.tencent.qqlive.protocol.pb.Block.ReportDictEntry\x12\x15\n\x08\x62lock_id\x18\t \x01(\tH\x04\x88\x01\x01\x12\x17\n\nvn_view_id\x18\n \x01(\tH\x05\x88\x01\x01\x12\x42\n\nextra_data\x18\x0b \x01(\x0b\x32).com.tencent.qqlive.protocol.pb.ExtraDataH\x06\x88\x01\x01\x12\x17\n\nrelated_id\x18\x0c \x01(\tH\x07\x88\x01\x01\x12\x1e\n\x11parent_related_id\x18\r \x01(\tH\x08\x88\x01\x01\x1a^\n\x11OperationMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x38\n\x05value\x18\x02 \x01(\x0b\x32).com.tencent.qqlive.protocol.pb.Operation:\x02\x38\x01\x1a\x66\n\x15MarkLabelListMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12<\n\x05value\x18\x02 \x01(\x0b\x32-.com.tencent.qqlive.protocol.pb.MarkLabelList:\x02\x38\x01\x1a\x31\n\x0fReportDictEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x42\r\n\x0b_block_typeB\x13\n\x11_block_style_typeB\r\n\x0b_css_structB\x07\n\x05_dataB\x0b\n\t_block_idB\r\n\x0b_vn_view_idB\r\n\x0b_extra_dataB\r\n\x0b_related_idB\x14\n\x12_parent_related_idb\x06proto3'
+  serialized_pb=b'\n\x13pyproto/Block.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x17pyproto/Operation.proto\x1a\x17pyproto/CSSStruct.proto\x1a\x1bpyproto/MarkLabelList.proto\x1a\x17pyproto/ExtraData.proto\x1a\x17pyproto/BlockType.proto\x1a\x19google/protobuf/any.proto\"\x81\x08\n\x05\x42lock\x12\x42\n\nblock_type\x18\x01 \x01(\x0e\x32).com.tencent.qqlive.protocol.pb.BlockTypeH\x00\x88\x01\x01\x12\x1d\n\x10\x62lock_style_type\x18\x02 \x01(\x05H\x01\x88\x01\x01\x12\x42\n\ncss_struct\x18\x03 \x01(\x0b\x32).com.tencent.qqlive.protocol.pb.CSSStructH\x02\x88\x01\x01\x12\'\n\x04\x64\x61ta\x18\x04 \x01(\x0b\x32\x14.google.protobuf.AnyH\x03\x88\x01\x01\x12N\n\roperation_map\x18\x05 \x03(\x0b\x32\x37.com.tencent.qqlive.protocol.pb.Block.OperationMapEntry\x12X\n\x13mark_label_list_map\x18\x06 \x03(\x0b\x32;.com.tencent.qqlive.protocol.pb.Block.MarkLabelListMapEntry\x12J\n\x0breport_dict\x18\x07 \x03(\x0b\x32\x35.com.tencent.qqlive.protocol.pb.Block.ReportDictEntry\x12\x15\n\x08\x62lock_id\x18\t \x01(\tH\x04\x88\x01\x01\x12\x17\n\nvn_view_id\x18\n \x01(\tH\x05\x88\x01\x01\x12\x42\n\nextra_data\x18\x0b \x01(\x0b\x32).com.tencent.qqlive.protocol.pb.ExtraDataH\x06\x88\x01\x01\x12\x17\n\nrelated_id\x18\x0c \x01(\tH\x07\x88\x01\x01\x12\x1e\n\x11parent_related_id\x18\r \x01(\tH\x08\x88\x01\x01\x1a^\n\x11OperationMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x38\n\x05value\x18\x02 \x01(\x0b\x32).com.tencent.qqlive.protocol.pb.Operation:\x02\x38\x01\x1a\x66\n\x15MarkLabelListMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12<\n\x05value\x18\x02 \x01(\x0b\x32-.com.tencent.qqlive.protocol.pb.MarkLabelList:\x02\x38\x01\x1a\x31\n\x0fReportDictEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x42\r\n\x0b_block_typeB\x13\n\x11_block_style_typeB\r\n\x0b_css_structB\x07\n\x05_dataB\x0b\n\t_block_idB\r\n\x0b_vn_view_idB\r\n\x0b_extra_dataB\r\n\x0b_related_idB\x14\n\x12_parent_related_idb\x06proto3'
   ,
-  dependencies=[pyproto_dot_ExtraData__pb2.DESCRIPTOR,pyproto_dot_CSSStruct__pb2.DESCRIPTOR,pyproto_dot_Operation__pb2.DESCRIPTOR,pyproto_dot_BlockType__pb2.DESCRIPTOR,pyproto_dot_Any__pb2.DESCRIPTOR,pyproto_dot_MarkLabelList__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_Operation__pb2.DESCRIPTOR,pyproto_dot_CSSStruct__pb2.DESCRIPTOR,pyproto_dot_MarkLabelList__pb2.DESCRIPTOR,pyproto_dot_ExtraData__pb2.DESCRIPTOR,pyproto_dot_BlockType__pb2.DESCRIPTOR,google_dot_protobuf_dot_any__pb2.DESCRIPTOR,])
 
 
 
@@ -66,8 +66,8 @@ _BLOCK_OPERATIONMAPENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=855,
-  serialized_end=949,
+  serialized_start=848,
+  serialized_end=942,
 )
 
 _BLOCK_MARKLABELLISTMAPENTRY = _descriptor.Descriptor(
@@ -104,8 +104,8 @@ _BLOCK_MARKLABELLISTMAPENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=951,
-  serialized_end=1053,
+  serialized_start=944,
+  serialized_end=1046,
 )
 
 _BLOCK_REPORTDICTENTRY = _descriptor.Descriptor(
@@ -142,8 +142,8 @@ _BLOCK_REPORTDICTENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1055,
-  serialized_end=1104,
+  serialized_start=1048,
+  serialized_end=1097,
 )
 
 _BLOCK = _descriptor.Descriptor(
@@ -295,8 +295,8 @@ _BLOCK = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=204,
-  serialized_end=1244,
+  serialized_start=212,
+  serialized_end=1237,
 )
 
 _BLOCK_OPERATIONMAPENTRY.fields_by_name['value'].message_type = pyproto_dot_Operation__pb2._OPERATION
@@ -306,7 +306,7 @@ _BLOCK_MARKLABELLISTMAPENTRY.containing_type = _BLOCK
 _BLOCK_REPORTDICTENTRY.containing_type = _BLOCK
 _BLOCK.fields_by_name['block_type'].enum_type = pyproto_dot_BlockType__pb2._BLOCKTYPE
 _BLOCK.fields_by_name['css_struct'].message_type = pyproto_dot_CSSStruct__pb2._CSSSTRUCT
-_BLOCK.fields_by_name['data'].message_type = pyproto_dot_Any__pb2._ANY
+_BLOCK.fields_by_name['data'].message_type = google_dot_protobuf_dot_any__pb2._ANY
 _BLOCK.fields_by_name['operation_map'].message_type = _BLOCK_OPERATIONMAPENTRY
 _BLOCK.fields_by_name['mark_label_list_map'].message_type = _BLOCK_MARKLABELLISTMAPENTRY
 _BLOCK.fields_by_name['report_dict'].message_type = _BLOCK_REPORTDICTENTRY

@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package com.tencent.qqlive.protocol.pb;
 
-import "pyproto/ExtraData.proto";
-import "pyproto/CSSStruct.proto";
-import "pyproto/SectionType.proto";
 import "pyproto/Operation.proto";
+import "pyproto/CSSStruct.proto";
+import "pyproto/ExtraData.proto";
+import "pyproto/SectionType.proto";
 import "pyproto/BlockList.proto";
 
 message Section {
