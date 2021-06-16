@@ -1,4 +1,3 @@
-/_agent.js
 /node_modules
 frida_protobuf/configs
 .vscode/*
