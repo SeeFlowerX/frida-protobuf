@@ -1,0 +1,17 @@
+{
+  "name": "frida-protobuf",
+  "version": "1.0.0",
+  "description": "Use frida to generate Android app all protobuf class to proto file",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "frida-compile src/index.ts -o _agent.js -c",
+    "watch": "frida-compile src/index.ts -o _agent.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^16.2.0",
+    "@types/node": "^14.14.10",
+    "frida-compile": "^10.0.0"
+  }
+}

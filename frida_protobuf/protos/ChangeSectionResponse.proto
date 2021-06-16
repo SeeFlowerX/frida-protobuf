@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+import "pyproto/Attent.proto";
+import "pyproto/Action.proto";
+import "pyproto/VideoIdKeyValueSet.proto";
+import "pyproto/Section.proto";
+import "pyproto/Poster.proto";
+
+message ChangeSectionResponse {
+    optional Section section = 1;
+    map<string, Section> section_map = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+import "pyproto/Block.proto";
+
+message BlockList {
+    repeated Block blocks = 1;
+    repeated Block optional_blocks = 2;
+}

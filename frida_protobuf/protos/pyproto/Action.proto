@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+message Action {
+    optional string url = 1;
+}

@@ -1,0 +1,5 @@
+grpcio==1.38.0
+grpcio-tools==1.38.0
+protobuf==3.17.3
+frida==14.2.18
+frida-tools==9.2.4

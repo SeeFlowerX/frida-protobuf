@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+message ImageFacePoint {
+    optional float x_float = 1;
+    optional float y_float = 2;
+}

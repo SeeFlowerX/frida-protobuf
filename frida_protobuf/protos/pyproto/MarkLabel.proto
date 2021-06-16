@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+import "pyproto/MarkLabelType.proto";
+
+message MarkLabel {
+    optional MarkLabelType mark_label_type = 1;
+    optional int32 position = 2;
+    optional string prime_text = 3;
+    optional string mark_image_url = 4;
+}

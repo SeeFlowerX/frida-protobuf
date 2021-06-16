@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+enum SectionType {
+    SECTION_TYPE_SINGLE_BLOCK = 0;
+    SECTION_TYPE_UNSPECIFIED = -1;
+    SECTION_TYPE_BLOCK_LIST = 1;
+    SECTION_TYPE_COLLECTION_BLOCKS = 2;
+    SECTION_TYPE_JCE_CUSTOM = 100001;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+message VideoIdSet {
+    optional string vid = 1;
+    optional string cid = 2;
+    optional string lid = 3;
+}

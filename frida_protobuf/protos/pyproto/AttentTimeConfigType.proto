@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+enum AttentTimeConfigType {
+    ATTENT_TIME_CONFIG_TYPE_UNSPECIFIED = 0;
+    ATTENT_TIME_CONFIG_TYPE_WITH_EXPLICIT_TIME = 1;
+    ATTENT_TIME_CONFIG_TYPE_WITHOUT_EXPLICIT_TIME = 2;
+}

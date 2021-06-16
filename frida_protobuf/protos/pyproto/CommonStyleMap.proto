@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+message CommonStyleMap {
+    map<string, string> style_map = 1;
+}

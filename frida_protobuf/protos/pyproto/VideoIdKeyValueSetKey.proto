@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+enum VideoIdKeyValueSetKey {
+    VIDEO_ID_KEY_VALUE_SET_KEY_DEFAULT = 0;
+    VIDEO_ID_KEY_VALUE_SET_KEY_VIDEO_ID = 1;
+    VIDEO_ID_KEY_VALUE_SET_KEY_COVER_ID = 2;
+    VIDEO_ID_KEY_VALUE_SET_KEY_COLUMN_ID = 3;
+    VIDEO_ID_KEY_VALUE_SET_KEY_PROGRAM_ID = 4;
+    VIDEO_ID_KEY_VALUE_SET_KEY_VIDEO_SHORTID = 5;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+import "pyproto/ExtraData.proto";
+import "pyproto/CSSStruct.proto";
+import "pyproto/SectionType.proto";
+import "pyproto/Operation.proto";
+import "pyproto/BlockList.proto";
+
+message Section {
+    optional SectionType section_type = 1;
+    optional int32 section_layout_type = 2;
+    optional CSSStruct css_struct = 3;
+    optional string section_id = 4;
+    optional BlockList block_list = 5;
+    optional ExtraData extra_any_data = 7;
+    map<string, string> report_dict = 8;
+    map<int32, BlockList> special_blocks = 9;
+    map<int32, Operation> operation_map = 10;
+    optional string merge_id = 11;
+    optional bool block_related = 12;
+}

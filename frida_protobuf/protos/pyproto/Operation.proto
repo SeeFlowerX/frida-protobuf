@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+import "pyproto/Any.proto";
+import "pyproto/OperationType.proto";
+
+message Operation {
+    optional OperationType operation_type = 1;
+    optional Any operation = 2;
+    map<string, string> report_dict = 3;
+    optional string report_id = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+import "pyproto/Any.proto";
+
+message ExtraData {
+    map<int32, Any> data = 1;
+}

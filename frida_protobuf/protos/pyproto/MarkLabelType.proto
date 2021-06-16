@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+enum MarkLabelType {
+    MARK_LABEL_TYPE_SINGLE_TEXT = 0;
+    MARK_LABEL_TYPE_IMAGE = 1;
+    MARK_LABEL_TYPE_LOTTIE = 2;
+}
