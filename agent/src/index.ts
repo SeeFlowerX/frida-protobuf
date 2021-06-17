@@ -63,8 +63,8 @@ export const GetAllMessageCls = (use_default_any: boolean, keyword_includes: str
                             if (!include_flag) continue;
                             let cls = null;
                             try {
-                                // cls = Java.use(className);
-                                cls = clsLoader.loadClass(className);
+                                cls = Java.use(className);
+                                // cls = clsLoader.loadClass(className);
                             }
                             catch (e) {
                             }
