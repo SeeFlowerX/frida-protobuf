@@ -21,7 +21,7 @@ function generate_message_fields(cls: any, use_default_any: boolean){
     let WireFieldCls = Java.use("com.squareup.wire.WireField");
     Java.perform(function(){
         function get_label(obj: any) {
-            return `${obj.label()}`.toLocaleLowerCase()
+            return `${obj.label()}`.toLowerCase()
         }
         function get_tag(obj: any) {
             return obj.tag()
@@ -39,7 +39,7 @@ function generate_message_fields(cls: any, use_default_any: boolean){
                 if(adapter.includes("#")){
                     let infos = adapter.split("#");
                     if (infos[0] == "com.squareup.wire.ProtoAdapter"){
-                        type = infos[1].toLocaleLowerCase();
+                        type = infos[1].toLowerCase();
                     }
                     else if(infos[1] == "ADAPTER"){
                         type = infos[0].split(".").pop();

@@ -62,11 +62,11 @@ export const GetAllMessageCls = (use_default_any: boolean, keyword_includes: str
                             catch (e) {
                             }
                             if (!cls) {
-                                return
+                                continue
                             }
                             let cls_super = cls.class.getSuperclass();
                             if (!cls_super) {
-                                return
+                                continue
                             }
 
                             if (WireMessageClz.equals(cls_super)) {
