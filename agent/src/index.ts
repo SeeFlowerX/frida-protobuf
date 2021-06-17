@@ -13,6 +13,12 @@ export const wrapJavaPerform = (fn: any): Promise<any> => {
     });
 };
 
+function IsVaildEnumCls(cls: any){
+    let annotations = cls.class.getSignatureAnnotation();
+    if (annotations.length != 4) return false;
+    return annotations[3].includes("Internal$EnumLite") || annotations[3].includes("WireEnum");
+}
+
 export const GetAllMessageCls = (use_default_any: boolean, keyword_includes: string): Promise<void> => {
     return wrapJavaPerform(() => {
         let keywords = keyword_includes.split(",");
@@ -57,7 +63,8 @@ export const GetAllMessageCls = (use_default_any: boolean, keyword_includes: str
                             if (!include_flag) continue;
                             let cls = null;
                             try {
-                                cls = Java.use(className);
+                                // cls = Java.use(className);
+                                cls = clsLoader.loadClass(className);
                             }
                             catch (e) {
                             }
@@ -74,7 +81,7 @@ export const GetAllMessageCls = (use_default_any: boolean, keyword_includes: str
                                 send_log(`[+] ${`${nameSet.size}`.padStart(5, ' ')} ${className}`)
                                 send(generate_message(cls, use_default_any));
                             }
-                            else if (EnumClz.equals(cls_super)){
+                            else if (EnumClz.equals(cls_super) && !cls.class.getEnclosingClass() && IsVaildEnumCls(cls)){
                                 // 这里不能用WireEnum判断 因为编译器实际上把它优化成Enum了 via @zsh
                                 nameSet.add(className)
                                 send_log(`[+] ${`${nameSet.size}`.padStart(5, ' ')} ${className}`)
