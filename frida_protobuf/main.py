@@ -61,7 +61,8 @@ def main():
     parser.add_argument('-n', '--attach-name', help='attach to NAME', metavar='NAME', default=None)
     parser.add_argument('-p', '--attach-pid', help='attach to PID', metavar='PID', default=None)
     parser.add_argument('-H', '--host', help='connect to remote frida-server on HOST', metavar='HOST', default=None)
-    parser.add_argument('-i', '--includes', help='keywords which class name is included, separator is <,>', metavar='includes', default=None)
+    parser.add_argument('-expected', '--keywords-expected', help='expected keywords in class name, separator is <,>', metavar='expected', default="")
+    parser.add_argument('-unexpected', '--keywords-unexpected', help='unexpected keywords in class name, separator is <,>', metavar='unexpected', default="cyjh.ddy.net")
     parser.add_argument('--use-default-any', help='use google.protobuf.Any when Any type field matched ', action='store_true')
     parser.add_argument('--runtime', default='qjs', help='only qjs know')
     args = parser.parse_args() # type: MainCmdArgs
@@ -102,7 +103,7 @@ def main():
         lt.error(f'inject scrip failed', exc_info=e)
         sys.exit()
     rpc = script.exports
-    rpc.dump(args.use_default_any, args.includes)
+    rpc.dump(args.use_default_any, args.keywords_expected, args.keywords_unexpected)
 
     # wait
     sys.stdin.read()

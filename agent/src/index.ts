@@ -19,11 +19,13 @@ function IsVaildEnumCls(cls: any){
     return annotations[3].includes("Internal$EnumLite") || annotations[3].includes("WireEnum");
 }
 
-export const GetAllMessageCls = (use_default_any: boolean, keyword_includes: string): Promise<void> => {
+export const GetAllMessageCls = (use_default_any: boolean, keyword_expected: string, keyword_unexpected: string = ""): Promise<void> => {
     return wrapJavaPerform(() => {
-        let keywords = keyword_includes.split(",");
+        let keywords_expected = keyword_expected.split(",");
+        let keywords_unexpected = keyword_unexpected.split(",");
         let nameSet = new Set();
         let dexfileSet = new Set();
+        let ModifierCls = Java.use("java.lang.reflect.Modifier")
         let WireMessageClz = Java.use("com.squareup.wire.Message").class;
         let EnumClz = Java.use("java.lang.Enum").class;
         let DexFileCls = Java.use("dalvik.system.DexFile");
@@ -53,18 +55,36 @@ export const GetAllMessageCls = (use_default_any: boolean, keyword_includes: str
                         while (entries.hasMoreElements()) {
                             let className = entries.nextElement().toString();
                             // send_log(className)
-                            let include_flag = false;
-                            for (let i = 0; i < keywords.length; i++){
-                                if (className.includes(keywords[i])){
-                                    include_flag = true;
+                            // 某些类通过Java.use会卡死 过滤掉
+                            let unexpected_flag = false;
+                            for (let i = 0; i < keywords_unexpected.length; i++){
+                                if (className.includes(keywords_unexpected[i])){
+                                    unexpected_flag = true;
                                     break
                                 }
                             }
-                            if (!include_flag) continue;
+                            if (unexpected_flag) continue;
+                            // 如果预设了关键词 必须包含关键词才检查 没有预设则会全部检查
+                            let expected_flag = false;
+                            for (let i = 0; i < keywords_expected.length; i++){
+                                if (className.includes(keywords_expected[i])){
+                                    expected_flag = true;
+                                    break
+                                }
+                            }
+                            if (!expected_flag) continue;
+                            // 跳过抽象类
+                            let clz = null;
+                            try{
+                                clz = clsLoader.loadClass(className);
+                            }
+                            catch(e){
+                            }
+                            if(clz && ModifierCls.isAbstract(clz.getModifiers())) continue
+                            // 尝试根据类名加载类
                             let cls = null;
                             try {
                                 cls = Java.use(className);
-                                // cls = clsLoader.loadClass(className);
                             }
                             catch (e) {
                             }

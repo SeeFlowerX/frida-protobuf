@@ -67,7 +67,7 @@ chmod +x /data/local/tmp/fs14218
 ### 注入frida脚本，获取proto配置
 
 ```bash
-python -m frida_protobuf.main -H 172.16.13.146:22222 -n com.tencent.qqlive --use-default-any --includes "com.tencent.qqlive.protocol.pb,com.tencent.spp_rpc"
+python -m frida_protobuf.main -H 172.16.13.146:22222 -n com.tencent.qqlive --use-default-any --keywords-expected "com.tencent.qqlive.protocol.pb,com.tencent.spp_rpc"
 ```
 
 ### 将proto的配置文件转换为proto文件

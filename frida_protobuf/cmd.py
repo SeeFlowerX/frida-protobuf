@@ -17,5 +17,6 @@ class MainCmdArgs:
         self.attach_name: str = args.attach_name
         self.attach_pid: str = args.attach_pid
         self.host: str = args.host
-        self.includes: str = args.includes
+        self.keywords_expected: str = args.keywords_expected
+        self.keywords_unexpected: str = args.keywords_unexpected
         self.use_default_any: bool = args.use_default_any
