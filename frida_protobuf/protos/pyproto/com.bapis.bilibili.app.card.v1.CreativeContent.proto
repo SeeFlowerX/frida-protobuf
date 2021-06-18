@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+message CreativeContent {
+    optional string title = 1;
+    optional string description = 2;
+    optional int64 video_id = 3;
+    optional string username = 4;
+    optional string image_url = 5;
+    optional string log_url = 7;
+    optional string url = 9;
+    optional string click_url = 10;
+    optional string show_url = 11;
+}

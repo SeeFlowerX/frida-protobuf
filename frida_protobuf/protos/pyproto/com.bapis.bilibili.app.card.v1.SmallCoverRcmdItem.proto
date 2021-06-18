@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+message SmallCoverRcmdItem {
+    optional string title = 1;
+    optional string cover = 2;
+    optional string uri = 3;
+    optional string param = 4;
+    optional string goto = 5;
+    optional string cover_right_text_1 = 6;
+    optional string right_desc_1 = 7;
+    optional string right_desc_2 = 8;
+    optional string cover_gif = 9;
+    optional int32 right_icon_1 = 10;
+    optional int32 right_icon_2 = 11;
+}

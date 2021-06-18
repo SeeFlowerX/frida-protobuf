@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Up.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+
+message LargeCoverV4 {
+    optional Base base = 1;
+    optional string cover_left_text_1 = 2;
+    optional string cover_left_text_2 = 3;
+    optional string cover_left_text_3 = 4;
+    optional string cover_badge = 5;
+    optional int32 can_play = 6;
+    optional Up up = 7;
+    optional string short_link = 8;
+    optional string share_subtitle = 9;
+    optional string play_number = 10;
+    optional string bvid = 11;
+    optional string sub_param = 12;
+}

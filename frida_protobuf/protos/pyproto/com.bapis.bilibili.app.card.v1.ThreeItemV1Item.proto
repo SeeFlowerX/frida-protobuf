@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+
+message ThreeItemV1Item {
+    optional Base base = 1;
+    optional string cover_left_text = 2;
+    optional int32 cover_left_icon = 3;
+    optional string desc_1 = 4;
+    optional string desc_2 = 5;
+    optional string badge = 6;
+}

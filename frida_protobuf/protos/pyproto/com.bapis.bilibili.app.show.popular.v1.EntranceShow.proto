@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.show.popular.v1;
+
+import "pyproto/com.bapis.bilibili.app.show.popular.v1.Bubble.proto";
+
+message EntranceShow {
+    optional string icon = 1;
+    optional string title = 2;
+    optional string module_id = 3;
+    optional string uri = 4;
+    optional Bubble bubble = 5;
+    optional int64 entrance_id = 6;
+    optional string top_photo = 7;
+    optional int32 entrance_type = 8;
+}

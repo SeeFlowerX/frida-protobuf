@@ -1,6 +1,6 @@
 from pathlib import Path
 from google.protobuf.json_format import MessageToDict
-from pyproto.ChangeSectionResponse_pb2 import ChangeSectionResponse
+from pyproto.com.tencent.qqlive.protocol.pb.ChangeSectionResponse_pb2 import ChangeSectionResponse
 
 resp = Path(r'frida_protobuf/sample/qqlive_ChangeSectionResponse.txt').read_bytes()
 change_section_response = ChangeSectionResponse()

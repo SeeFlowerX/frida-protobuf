@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package com.tencent.qqlive.protocol.pb;
-
-import "pyproto/MarkLabel.proto";
-
-message MarkLabelList {
-    repeated MarkLabel mark_label_list = 1;
-}

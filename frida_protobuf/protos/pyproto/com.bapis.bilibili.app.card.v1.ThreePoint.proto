@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.DislikeReason.proto";
+
+message ThreePoint {
+    repeated DislikeReason dislike_reasons = 1;
+    repeated DislikeReason feedbacks = 2;
+    optional int32 watch_later = 3;
+}

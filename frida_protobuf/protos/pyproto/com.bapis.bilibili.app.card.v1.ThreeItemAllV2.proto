@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.TwoItemHV1Item.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
+
+message ThreeItemAllV2 {
+    optional Base base = 1;
+    optional ReasonStyle top_rcmd_reason_style = 2;
+    repeated TwoItemHV1Item item = 3;
+}

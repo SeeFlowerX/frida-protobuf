@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.SmallCoverV5.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.DynamicHot.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ThreeItemV1.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.HotTopic.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ThreeItemAllV2.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.PopularTopEntrance.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.MiddleCoverV3.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.RcmdOneItem.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.LargeCoverV1.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.LargeCoverV4.proto";
+
+message Card {
+    oneof item {
+        HotTopic hot_topic = 5;
+        LargeCoverV1 large_cover_v1 = 2;
+        LargeCoverV4 large_cover_v4 = 8;
+        MiddleCoverV3 middle_cover_v3 = 7;
+        PopularTopEntrance popular_top_entrance = 9;
+        RcmdOneItem rcmd_one_item = 10;
+        SmallCoverV5 small_cover_v5 = 1;
+        ThreeItemAllV2 three_item_all_v2 = 3;
+        DynamicHot three_item_h_v5 = 6;
+        ThreeItemV1 three_item_v1 = 4;
+    }
+}

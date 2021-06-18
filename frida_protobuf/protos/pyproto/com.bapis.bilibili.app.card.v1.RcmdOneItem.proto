@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
+
+message RcmdOneItem {
+    optional Base base = 1;
+    optional ReasonStyle top_rcmd_reason_style = 2;
+    optional SmallCoverRcmdItem item = 3;
+}

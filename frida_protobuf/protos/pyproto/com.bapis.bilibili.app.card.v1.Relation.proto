@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+message Relation {
+    optional int32 status = 1;
+    optional int32 is_follow = 2;
+    optional int32 is_followed = 3;
+}

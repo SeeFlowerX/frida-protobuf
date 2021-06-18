@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
+
+message MiddleCoverV3 {
+    optional Base base = 1;
+    optional ReasonStyle cover_badge_style = 4;
+}

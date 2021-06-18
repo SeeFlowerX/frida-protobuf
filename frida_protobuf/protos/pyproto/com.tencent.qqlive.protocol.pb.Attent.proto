@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+import "pyproto/com.tencent.qqlive.protocol.pb.AttentUIInfo.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.AttentFakeDisplayInfo.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.CalendarItem.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.AttentTimeConfigType.proto";
+
+message Attent {
+    optional string attent_key = 1;
+    optional int32 attent_state = 2;
+    optional int64 update_time = 3;
+    optional AttentUIInfo attent_view_info = 4;
+    optional AttentFakeDisplayInfo fake_display_info = 5;
+    optional string attent_from = 6;
+    optional CalendarItem calendar_item = 7;
+    optional AttentTimeConfigType attent_time_config_type = 8;
+}

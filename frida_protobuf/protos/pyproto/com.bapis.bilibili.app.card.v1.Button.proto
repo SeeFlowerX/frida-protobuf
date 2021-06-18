@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Relation.proto";
+
+message Button {
+    optional string text = 1;
+    optional string param = 2;
+    optional string uri = 3;
+    optional string event = 4;
+    optional int32 selected = 5;
+    optional int32 type = 6;
+    optional Relation relation = 8;
+}

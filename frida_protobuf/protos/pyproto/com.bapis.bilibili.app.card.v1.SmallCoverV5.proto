@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.HotwordEntrance.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Up.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
+
+message SmallCoverV5 {
+    optional Base base = 1;
+    optional string cover_gif = 2;
+    optional Up up = 3;
+    optional string cover_right_text_1 = 4;
+    optional string right_desc_1 = 5;
+    optional string right_desc_2 = 6;
+    optional ReasonStyle rcmd_reason_style = 7;
+    optional HotwordEntrance hotword_entrance = 8;
+    optional ReasonStyle corner_mark_style = 9;
+    optional int32 right_icon_1 = 10;
+    optional int32 right_icon_2 = 11;
+    optional ReasonStyle left_corner_mark_style = 12;
+}

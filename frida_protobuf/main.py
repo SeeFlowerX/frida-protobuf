@@ -16,7 +16,8 @@ lt, lf = setup_logger('main')
 
 
 def dump_config(config: dict):
-    (CONFIGS_PATH / f'{config["cls_name"]}.json').write_text(json.dumps(config, ensure_ascii=False, indent=4), encoding='utf-8')
+    config_path = (CONFIGS_PATH / f'{config["package"]}.{config["cls_name"]}.json')
+    config_path.write_text(json.dumps(config, ensure_ascii=False, indent=4), encoding='utf-8')
 
 
 def on_detached(reason, *args):

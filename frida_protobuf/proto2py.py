@@ -16,21 +16,21 @@ def proto2py(args: CmdArgs):
     for proto_path in PROTOS_PATH.iterdir():
         if proto_path.is_dir():
             continue
-        if proto_path.stem == args.proto:
-            continue
+        # if proto_path.stem == args.proto:
+        #     continue
         if proto_path.suffix != ".proto":
             continue
         shutil.move(proto_path.resolve().as_posix(), (tmp_proto_folder / proto_path.name).resolve().as_posix())
-    os.system(f'python -m grpc_tools.protoc -I {PROTOS_PATH.name} --python_out=../{args.python_import_prefix} {PROTOS_PATH.name}/{args.proto}.proto')
-    os.system(f'python -m grpc_tools.protoc -I {PROTOS_PATH.name} --python_out=../{args.python_import_prefix} {PROTOS_PATH.name}/{args.python_import_prefix}/*.proto')
-    py_folder = PYPROTO_PATH / f'{args.python_import_prefix}'
-    for py_path in py_folder.iterdir():
-        if py_path.is_dir():
-            continue
-        if py_path.suffix != ".py":
-            continue
-        shutil.move(py_path.resolve().as_posix(), (PYPROTO_PATH / py_path.name).resolve().as_posix())
-    shutil.rmtree(py_folder.resolve().as_posix())
+    # os.system(f'python -m grpc_tools.protoc -I {PROTOS_PATH.name} --python_out=../ {PROTOS_PATH.name}/{args.proto}.proto')
+    os.system(f'python -m grpc_tools.protoc -I {PROTOS_PATH.name} --python_out=../ {PROTOS_PATH.name}/{args.python_import_prefix}/*.proto')
+    # py_folder = PYPROTO_PATH / f'{args.python_import_prefix}'
+    # for py_path in py_folder.iterdir():
+    #     if py_path.is_dir():
+    #         continue
+    #     if py_path.suffix != ".py":
+    #         continue
+    #     shutil.move(py_path.resolve().as_posix(), (PYPROTO_PATH / py_path.name).resolve().as_posix())
+    # shutil.rmtree(py_folder.resolve().as_posix())
     os.chdir('..')
 
 

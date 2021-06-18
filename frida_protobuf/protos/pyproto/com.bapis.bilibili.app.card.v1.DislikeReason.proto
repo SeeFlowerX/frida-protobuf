@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+message DislikeReason {
+    optional int64 id = 1;
+    optional string name = 2;
+}

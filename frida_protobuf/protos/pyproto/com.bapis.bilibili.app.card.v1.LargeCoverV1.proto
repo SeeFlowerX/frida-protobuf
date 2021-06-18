@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Avatar.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.LikeButton.proto";
+
+message LargeCoverV1 {
+    optional Base base = 1;
+    optional string cover_gif = 2;
+    optional Avatar avatar = 3;
+    optional string cover_left_text_1 = 4;
+    optional string cover_left_text_2 = 5;
+    optional string cover_left_text_3 = 6;
+    optional string cover_badge = 7;
+    optional string top_rcmd_reason = 8;
+    optional string bottom_rcmd_reason = 9;
+    optional string desc = 10;
+    optional int32 official_icon = 11;
+    optional int32 can_play = 12;
+    optional ReasonStyle top_rcmd_reason_style = 13;
+    optional ReasonStyle bottom_rcmd_reason_style = 14;
+    optional ReasonStyle left_cover_badge_style = 16;
+    optional ReasonStyle right_cover_badge_style = 17;
+    optional string cover_badge_2 = 18;
+    optional LikeButton like_button = 19;
+    optional int32 title_single_line = 20;
+    optional string cover_right_text = 21;
+}

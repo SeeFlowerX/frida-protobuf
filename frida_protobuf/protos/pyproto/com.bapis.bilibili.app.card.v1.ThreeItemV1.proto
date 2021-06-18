@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ThreeItemV1Item.proto";
+
+message ThreeItemV1 {
+    optional Base base = 1;
+    optional int32 title_icon = 2;
+    optional string more_uri = 3;
+    optional string more_text = 4;
+    repeated ThreeItemV1Item items = 5;
+}

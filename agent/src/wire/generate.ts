@@ -1,4 +1,4 @@
-import { send_log } from "../common"
+import { send_log, generate_package, generate_enum_fields } from "../common"
 
 export function generate_message(cls: any, use_default_any: boolean){
     let cls_config:{[key: string]: any} = {};
@@ -9,11 +9,6 @@ export function generate_message(cls: any, use_default_any: boolean){
         cls_config["fields_config"] = generate_message_fields(cls, use_default_any);
     })
     return cls_config;
-}
-
-function generate_package(cls: any){
-    let name = `${cls.class.getName()}`;
-    return name.substring(0, name.lastIndexOf('.'));
 }
 
 function generate_message_fields(cls: any, use_default_any: boolean){
@@ -35,9 +30,10 @@ function generate_message_fields(cls: any, use_default_any: boolean){
         function handler_annotation(field: any, annotation: any) {
             function get_type(adapter: any) {
                 let need_import = false;
-                let type = "";
+                let type: any = "";
+                let import_pkg = "";
                 if(adapter.includes("#")){
-                    let infos = adapter.split("#");
+                    let infos: string[] = adapter.split("#");
                     if (infos[0] == "com.squareup.wire.ProtoAdapter"){
                         type = infos[1].toLowerCase();
                     }
@@ -47,12 +43,13 @@ function generate_message_fields(cls: any, use_default_any: boolean){
                             type = "google.protobuf.Any";
                         }
                         need_import = true;
+                        import_pkg = infos[0].slice(0, infos[0].lastIndexOf("."));
                     }
                     else{
                         send_log(`[*] unhandled adapter => ${adapter}`)
                     }
                 };
-                return {"need_import": need_import, "type": type}
+                return {"need_import": need_import, "type": type, "package": import_pkg}
             }
             let obj = Java.cast(annotation, WireFieldCls);
             let name = field.getName();
@@ -107,13 +104,13 @@ export function generate_enum(cls: any){
     return cls_config;
 }
 
-function generate_enum_fields(cls: any){
-    let fields_config:{[key: string]: any} = {};
-    Java.perform(function(){
-        let enum_values = cls.values();
-        enum_values.forEach(function name(params: any) {
-            fields_config[`${params}`] = params.getValue();
-        })
-    })
-    return fields_config;
-}
+// function generate_enum_fields(cls: any){
+//     let fields_config:{[key: string]: any} = {};
+//     Java.perform(function(){
+//         let enum_values = cls.values();
+//         enum_values.forEach(function name(params: any) {
+//             fields_config[`${params}`] = params.getValue();
+//         })
+//     })
+//     return fields_config;
+// }

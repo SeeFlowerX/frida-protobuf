@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+message HotwordEntrance {
+    optional int64 hotword_id = 1;
+    optional string hot_text = 2;
+    optional string icon = 4;
+}

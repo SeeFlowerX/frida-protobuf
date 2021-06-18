@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.HotTopicItem.proto";
+
+message HotTopic {
+    optional Base base = 1;
+    optional string desc = 2;
+    repeated HotTopicItem items = 3;
+}

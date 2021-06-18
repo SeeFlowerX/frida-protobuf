@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
+
+message DynamicHot {
+    optional Base base = 1;
+    optional string top_left_title = 2;
+    optional string more_uri = 5;
+    optional string more_text = 6;
+    repeated string covers = 7;
+    optional string cover_right_text = 8;
+    optional ReasonStyle top_rcmd_reason_style = 9;
+}

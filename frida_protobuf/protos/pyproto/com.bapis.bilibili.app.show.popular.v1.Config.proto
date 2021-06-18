@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.show.popular.v1;
+
+import "pyproto/com.bapis.bilibili.app.show.popular.v1.EntranceShow.proto";
+
+message Config {
+    optional string item_title = 1;
+    optional string bottom_text = 2;
+    optional string bottom_text_cover = 3;
+    optional string bottom_text_url = 4;
+    repeated EntranceShow top_items = 5;
+    optional string head_image = 6;
+    repeated EntranceShow page_items = 7;
+}

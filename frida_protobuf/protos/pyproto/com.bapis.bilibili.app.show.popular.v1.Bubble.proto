@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.show.popular.v1;
+
+message Bubble {
+    optional string bubble_content = 1;
+    optional int32 version = 2;
+    optional int64 stime = 3;
+}

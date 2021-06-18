@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Button.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Avatar.proto";
+
+message Mask {
+    optional Avatar avatar = 1;
+    optional Button button = 2;
+}

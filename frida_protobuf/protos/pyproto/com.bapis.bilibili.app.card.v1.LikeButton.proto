@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+message LikeButton {
+    optional int64 aid = 1;
+    optional int32 count = 2;
+    optional bool show_count = 3;
+    optional string event = 4;
+    optional int32 selected = 5;
+}

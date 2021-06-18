@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+message Args {
+    optional int32 type = 1;
+    optional int64 up_id = 2;
+    optional string up_name = 3;
+    optional int32 rid = 4;
+    optional string rname = 5;
+    optional int64 tid = 6;
+    optional string tname = 7;
+    optional string track_id = 8;
+    optional string state = 9;
+    optional int32 converge_type = 10;
+    optional int64 aid = 11;
+}

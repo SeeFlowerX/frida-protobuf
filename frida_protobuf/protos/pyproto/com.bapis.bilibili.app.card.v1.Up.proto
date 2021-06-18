@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Button.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Avatar.proto";
+
+message Up {
+    optional int64 id = 1;
+    optional string name = 2;
+    optional string desc = 3;
+    optional Avatar avatar = 4;
+    optional int32 official_icon = 5;
+    optional Button desc_button = 6;
+    optional string cooperation = 7;
+}

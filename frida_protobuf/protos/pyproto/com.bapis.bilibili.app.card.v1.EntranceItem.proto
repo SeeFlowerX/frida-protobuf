@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Bubble.proto";
+
+message EntranceItem {
+    optional string goto = 1;
+    optional string icon = 2;
+    optional string title = 3;
+    optional string module_id = 4;
+    optional string uri = 5;
+    optional int64 entrance_id = 6;
+    optional Bubble bubble = 7;
+    optional int32 entrance_type = 8;
+}

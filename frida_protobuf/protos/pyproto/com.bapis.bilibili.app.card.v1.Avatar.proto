@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+message Avatar {
+    optional string cover = 1;
+    optional string text = 2;
+    optional string uri = 3;
+    optional int32 type = 4;
+    optional string event = 5;
+    optional int32 defalut_cover = 7;
+}

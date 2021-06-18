@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Args.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Button.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ThreePoint.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Mask.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.AdInfo.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.PlayerArgs.proto";
+
+message Base {
+    optional string card_type = 1;
+    optional string card_goto = 2;
+    optional string goto = 3;
+    optional string param = 4;
+    optional string cover = 5;
+    optional string title = 6;
+    optional string uri = 7;
+    optional ThreePoint three_point = 8;
+    optional Args args = 9;
+    optional PlayerArgs player_args = 10;
+    optional int64 idx = 11;
+    optional AdInfo ad_info = 12;
+    optional Mask mask = 13;
+    optional string from_type = 14;
+    optional Button desc_button = 17;
+}

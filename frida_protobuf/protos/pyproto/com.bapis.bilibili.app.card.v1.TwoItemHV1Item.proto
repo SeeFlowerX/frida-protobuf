@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.card.v1;
+
+import "pyproto/com.bapis.bilibili.app.card.v1.Args.proto";
+
+message TwoItemHV1Item {
+    optional string title = 1;
+    optional string cover = 2;
+    optional string uri = 3;
+    optional string param = 4;
+    optional Args args = 5;
+    optional string goto = 6;
+    optional string cover_left_text_1 = 7;
+    optional int32 cover_left_icon_1 = 8;
+    optional string cover_right_text = 9;
+}

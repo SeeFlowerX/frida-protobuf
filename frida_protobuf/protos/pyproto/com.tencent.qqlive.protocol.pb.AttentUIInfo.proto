@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.tencent.qqlive.protocol.pb;
+
+import "pyproto/com.tencent.qqlive.protocol.pb.Poster.proto";
+
+message AttentUIInfo {
+    optional string unattent_title = 1;
+    optional string attent_title = 2;
+    optional Poster poster = 3;
+    optional float release_time = 4;
+}

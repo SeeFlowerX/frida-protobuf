@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package com.bapis.bilibili.app.show.popular.v1;
+
+import "pyproto/com.bapis.bilibili.app.show.popular.v1.Config.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Card.proto";
+
+message PopularReply {
+    repeated com.bapis.bilibili.app.card.v1.Card items = 1;
+    optional Config config = 2;
+    optional string ver = 3;
+}
