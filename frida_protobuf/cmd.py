@@ -4,7 +4,8 @@ class CmdArgs:
         self.help: str = args.help
         self.version: str = args.version
         self.proto: str = args.proto
-        self.extra_import = args.extra_import
+        self.extra_import: str = args.extra_import
+        self.syntax_version: str = args.syntax_version
         self.proto_folder: str = args.proto_folder
         self.python_import_prefix: str = args.python_import_prefix
 

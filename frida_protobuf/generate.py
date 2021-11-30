@@ -7,9 +7,10 @@ from frida_protobuf.cmd import CmdArgs
 from frida_protobuf.version import __version__
 from frida_protobuf.config import CONFIGS_PATH, PROTOS_PATH
 
+SYNTAX_VERSION = "proto3"
 
 def generate_enum_proto(config: dict, dump: bool = True):
-    lines = ['syntax = "proto3";', '\n\n']
+    lines = [f'syntax = "{SYNTAX_VERSION}";', '\n\n']
     if config['package'] != '':
         lines.append(f'package {config["package"]};')
         lines.append('\n\n')
@@ -29,7 +30,7 @@ def generate_message_proto(args: CmdArgs, config: dict, generated: list = []):
     _import = ''
     if args.python_import_prefix != '':
         _import = f'{args.python_import_prefix}/'
-    lines = ['syntax = "proto3";', '\n\n']
+    lines = [f'syntax = "{SYNTAX_VERSION}";', '\n\n']
     if config['package'] != '':
         lines.append(f'package {config["package"]};')
         lines.append('\n\n')
@@ -144,6 +145,7 @@ def main():
     parser.add_argument('-v', '--version', action='store_true', help='print version and exit')
     parser.add_argument('-h', '--help', action='store_true', help='print help message and exit')
     parser.add_argument('--proto', default='', required=True, help='main proto file name (without suffix)')
+    parser.add_argument('--syntax-version', default='proto3', choices=['proto3', 'proto2'], help='set syntax to proto3 or proto2')
     parser.add_argument('--extra-import', default='', help='extra import for main proto, e.g [package]:proto1,proto2')
     parser.add_argument('--proto-folder', default='protos', help='proto files folder')
     parser.add_argument('--python-import-prefix', default='pyproto', help='python import prefix')
@@ -155,6 +157,8 @@ def main():
     if args.version:
         print_version()
         sys.exit()
+    global SYNTAX_VERSION
+    SYNTAX_VERSION = args.syntax_version
     generate(args)
 
 
