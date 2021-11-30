@@ -25,7 +25,7 @@ def generate_enum_proto(config: dict, dump: bool = True):
         return lines
 
 
-def generate_message_proto(args: CmdArgs, config: dict):
+def generate_message_proto(args: CmdArgs, config: dict, generated: list = []):
     _import = ''
     if args.python_import_prefix != '':
         _import = f'{args.python_import_prefix}/'
@@ -70,11 +70,18 @@ def generate_message_proto(args: CmdArgs, config: dict):
         if _import_proto == 'google.protobuf.Any':
             lines.append(f'import "google/protobuf/any.proto";\n')
             continue
+        # skip import self
+        if _import_proto == args.proto:
+            continue
+        # avoid loop import
+        if _import_proto in generated:
+            continue
+        generated.append(_import_proto)
         lines.append(f'import "{_import}{_import_proto}.proto";\n')
         _args = CmdArgs(args)
         _args.proto = _import_proto
         _args.extra_import = ''
-        generate(_args, protofrom=args.proto)
+        generate(_args, protofrom=args.proto, generated=generated.copy())
     if len(_imports) > 0:
         lines.append('\n')
     if config['cls_name'] != '':
@@ -109,7 +116,7 @@ def generate_message_oneof(lines: list, oneof_config: dict):
     lines.append('    }\n')
 
 
-def generate(args: CmdArgs, protofrom: str = ''):
+def generate(args: CmdArgs, protofrom: str = '', generated: list = []):
     config_path = CONFIGS_PATH / f'{args.proto}.json'
     if config_path.exists() is False:
         sys.exit(f'can not find {config_path.resolve().as_posix()} {protofrom}')
@@ -117,7 +124,8 @@ def generate(args: CmdArgs, protofrom: str = ''):
     if config['type'] == 'enum':
         generate_enum_proto(config)
     elif config['type'] == 'message':
-        generate_message_proto(args, config)
+        # generated or generated.copy() ???
+        generate_message_proto(args, config, generated=generated)
     else:
         sys.exit(f'unknow type for [{args.proto}] config')
 

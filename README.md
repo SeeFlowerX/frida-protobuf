@@ -88,6 +88,8 @@ chmod +x /data/local/tmp/fs14218
 --extra-import "package1:proto1,proto2|package2:proto3,proto4"
 ```
 
+**合理使用--keywords-expected可以避免APP崩溃或卡死**
+
 ### 案例一
 
 - `com.tencent.qqlive` 版本号 `21854`
