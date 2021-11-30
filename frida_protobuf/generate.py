@@ -75,13 +75,14 @@ def generate_message_proto(args: CmdArgs, config: dict, generated: list = []):
             continue
         # avoid loop import
         if _import_proto in generated:
+            lines.append(f'import "{_import}{_import_proto}.proto";\n')
             continue
         generated.append(_import_proto)
         lines.append(f'import "{_import}{_import_proto}.proto";\n')
         _args = CmdArgs(args)
         _args.proto = _import_proto
         _args.extra_import = ''
-        generate(_args, protofrom=args.proto, generated=generated.copy())
+        generate(_args, protofrom=args.proto, generated=generated)
     if len(_imports) > 0:
         lines.append('\n')
     if config['cls_name'] != '':
@@ -90,7 +91,7 @@ def generate_message_proto(args: CmdArgs, config: dict, generated: list = []):
         generate_message_oneof(lines, config['oneof'])
     for field_config in fields_config:
         line = '    '
-        if field_config['label'] != '':
+        if field_config['label'] != '' and field_config['label'] != 'required':
             line += f'{field_config["label"]} '
         if field_config['type_2']['type'] != '':
             line += f"map<{field_config['type_1']['type']}, {field_config['type_2']['type']}> "
