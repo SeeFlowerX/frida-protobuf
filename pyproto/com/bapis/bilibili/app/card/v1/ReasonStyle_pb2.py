@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n8pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\"\x83\x05\n\x0bReasonStyle\x12\x11\n\x04text\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x17\n\ntext_color\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x15\n\x08\x62g_color\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x19\n\x0c\x62order_color\x18\x04 \x01(\tH\x03\x88\x01\x01\x12\x15\n\x08icon_url\x18\x05 \x01(\tH\x04\x88\x01\x01\x12\x1d\n\x10text_color_night\x18\x06 \x01(\tH\x05\x88\x01\x01\x12\x1b\n\x0e\x62g_color_night\x18\x07 \x01(\tH\x06\x88\x01\x01\x12\x1f\n\x12\x62order_color_night\x18\x08 \x01(\tH\x07\x88\x01\x01\x12\x1b\n\x0eicon_night_url\x18\t \x01(\tH\x08\x88\x01\x01\x12\x15\n\x08\x62g_style\x18\n \x01(\x05H\t\x88\x01\x01\x12\x10\n\x03uri\x18\x0b \x01(\tH\n\x88\x01\x01\x12\x18\n\x0bicon_bg_url\x18\x0c \x01(\tH\x0b\x88\x01\x01\x12\x12\n\x05\x65vent\x18\r \x01(\tH\x0c\x88\x01\x01\x12\x1c\n\x0fright_icon_type\x18\x0f \x01(\x05H\r\x88\x01\x01\x12 \n\x13left_live_icon_type\x18\x10 \x01(\tH\x0e\x88\x01\x01\x42\x07\n\x05_textB\r\n\x0b_text_colorB\x0b\n\t_bg_colorB\x0f\n\r_border_colorB\x0b\n\t_icon_urlB\x13\n\x11_text_color_nightB\x11\n\x0f_bg_color_nightB\x15\n\x13_border_color_nightB\x11\n\x0f_icon_night_urlB\x0b\n\t_bg_styleB\x06\n\x04_uriB\x0e\n\x0c_icon_bg_urlB\x08\n\x06_eventB\x12\n\x10_right_icon_typeB\x16\n\x14_left_live_icon_typeb\x06proto3'
+  serialized_pb=b'\n8pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\"\xf9\x04\n\x0bReasonStyle\x12\x11\n\x04text\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x17\n\ntext_color\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x15\n\x08\x62g_color\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x19\n\x0c\x62order_color\x18\x04 \x01(\tH\x03\x88\x01\x01\x12\x15\n\x08icon_url\x18\x05 \x01(\tH\x04\x88\x01\x01\x12\x1d\n\x10text_color_night\x18\x06 \x01(\tH\x05\x88\x01\x01\x12\x1b\n\x0e\x62g_color_night\x18\x07 \x01(\tH\x06\x88\x01\x01\x12\x1f\n\x12\x62order_color_night\x18\x08 \x01(\tH\x07\x88\x01\x01\x12\x1b\n\x0eicon_night_url\x18\t \x01(\tH\x08\x88\x01\x01\x12\x15\n\x08\x62g_style\x18\n \x01(\x05H\t\x88\x01\x01\x12\x10\n\x03uri\x18\x0b \x01(\tH\n\x88\x01\x01\x12\x18\n\x0bicon_bg_url\x18\x0c \x01(\tH\x0b\x88\x01\x01\x12\x12\n\x05\x65vent\x18\r \x01(\tH\x0c\x88\x01\x01\x12\x1c\n\x0fright_icon_type\x18\x0f \x01(\x05H\r\x88\x01\x01\x12\x1b\n\x0eleft_icon_type\x18\x10 \x01(\tH\x0e\x88\x01\x01\x42\x07\n\x05_textB\r\n\x0b_text_colorB\x0b\n\t_bg_colorB\x0f\n\r_border_colorB\x0b\n\t_icon_urlB\x13\n\x11_text_color_nightB\x11\n\x0f_bg_color_nightB\x15\n\x13_border_color_nightB\x11\n\x0f_icon_night_urlB\x0b\n\t_bg_styleB\x06\n\x04_uriB\x0e\n\x0c_icon_bg_urlB\x08\n\x06_eventB\x12\n\x10_right_icon_typeB\x11\n\x0f_left_icon_typeb\x06proto3'
 )
 
 
@@ -132,7 +132,7 @@ _REASONSTYLE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='left_live_icon_type', full_name='com.bapis.bilibili.app.card.v1.ReasonStyle.left_live_icon_type', index=14,
+      name='left_icon_type', full_name='com.bapis.bilibili.app.card.v1.ReasonStyle.left_icon_type', index=14,
       number=16, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -220,13 +220,13 @@ _REASONSTYLE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
     _descriptor.OneofDescriptor(
-      name='_left_live_icon_type', full_name='com.bapis.bilibili.app.card.v1.ReasonStyle._left_live_icon_type',
+      name='_left_icon_type', full_name='com.bapis.bilibili.app.card.v1.ReasonStyle._left_icon_type',
       index=14, containing_type=None,
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
   serialized_start=93,
-  serialized_end=736,
+  serialized_end=726,
 )
 
 _REASONSTYLE.oneofs_by_name['_text'].fields.append(
@@ -271,9 +271,9 @@ _REASONSTYLE.fields_by_name['event'].containing_oneof = _REASONSTYLE.oneofs_by_n
 _REASONSTYLE.oneofs_by_name['_right_icon_type'].fields.append(
   _REASONSTYLE.fields_by_name['right_icon_type'])
 _REASONSTYLE.fields_by_name['right_icon_type'].containing_oneof = _REASONSTYLE.oneofs_by_name['_right_icon_type']
-_REASONSTYLE.oneofs_by_name['_left_live_icon_type'].fields.append(
-  _REASONSTYLE.fields_by_name['left_live_icon_type'])
-_REASONSTYLE.fields_by_name['left_live_icon_type'].containing_oneof = _REASONSTYLE.oneofs_by_name['_left_live_icon_type']
+_REASONSTYLE.oneofs_by_name['_left_icon_type'].fields.append(
+  _REASONSTYLE.fields_by_name['left_icon_type'])
+_REASONSTYLE.fields_by_name['left_icon_type'].containing_oneof = _REASONSTYLE.oneofs_by_name['_left_icon_type']
 DESCRIPTOR.message_types_by_name['ReasonStyle'] = _REASONSTYLE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

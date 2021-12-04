@@ -7,4 +7,9 @@ message CalendarItem {
     optional bool is_full_day = 2;
     optional string description = 3;
     optional string title = 4;
+    optional int64 end_time = 5;
+    optional int64 before_seconds = 6;
+    optional string jump_url = 7;
+    optional string jump_url_scheme = 8;
+    map<string, string> service_type = 9;
 }

@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package com.tencent.qqlive.protocol.pb;
 
-import "pyproto/com.tencent.qqlive.protocol.pb.VideoIdSet.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.Poster.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.VideoIdSet.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.Operation.proto";
 
 message AttentFakeDisplayInfo {

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package tbclient;
+
+message ThemeBgProp {
+    optional int32 props_id = 1;
+    optional string title = 2;
+    optional string description = 3;
+    optional string example_url = 4;
+    optional string permission = 5;
+    optional string props_state_img = 6;
+    optional uint32 in_use = 7;
+    optional int32 free_user_level = 8;
+    optional string activity_url = 9;
+    optional int32 is_finished = 10;
+}

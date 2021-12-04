@@ -11,9 +11,9 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.bapis.bilibili.app.card.v1 import SmallCoverRcmdItem_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_SmallCoverRcmdItem__pb2
-from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import ReasonStyle_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import SmallCoverRcmdItem_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_SmallCoverRcmdItem__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -22,9 +22,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n8pyproto/com.bapis.bilibili.app.card.v1.RcmdOneItem.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a?pyproto/com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\x1a\x38pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto\"\x8a\x02\n\x0bRcmdOneItem\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12O\n\x15top_rcmd_reason_style\x18\x02 \x01(\x0b\x32+.com.bapis.bilibili.app.card.v1.ReasonStyleH\x01\x88\x01\x01\x12\x45\n\x04item\x18\x03 \x01(\x0b\x32\x32.com.bapis.bilibili.app.card.v1.SmallCoverRcmdItemH\x02\x88\x01\x01\x42\x07\n\x05_baseB\x18\n\x16_top_rcmd_reason_styleB\x07\n\x05_itemb\x06proto3'
+  serialized_pb=b'\n8pyproto/com.bapis.bilibili.app.card.v1.RcmdOneItem.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x38pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\x1a?pyproto/com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem.proto\"\x8a\x02\n\x0bRcmdOneItem\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12O\n\x15top_rcmd_reason_style\x18\x02 \x01(\x0b\x32+.com.bapis.bilibili.app.card.v1.ReasonStyleH\x01\x88\x01\x01\x12\x45\n\x04item\x18\x03 \x01(\x0b\x32\x32.com.bapis.bilibili.app.card.v1.SmallCoverRcmdItemH\x02\x88\x01\x01\x42\x07\n\x05_baseB\x18\n\x16_top_rcmd_reason_styleB\x07\n\x05_itemb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_SmallCoverRcmdItem__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_SmallCoverRcmdItem__pb2.DESCRIPTOR,])
 
 
 

@@ -11,10 +11,10 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.tencent.qqlive.protocol.pb import Attent_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Attent__pb2
-from pyproto.com.tencent.qqlive.protocol.pb import Action_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Action__pb2
 from pyproto.com.tencent.qqlive.protocol.pb import VideoIdKeyValueSet_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_VideoIdKeyValueSet__pb2
 from pyproto.com.tencent.qqlive.protocol.pb import Poster_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2
+from pyproto.com.tencent.qqlive.protocol.pb import Attent_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Attent__pb2
+from pyproto.com.tencent.qqlive.protocol.pb import Action_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Action__pb2
 from pyproto.com.tencent.qqlive.protocol.pb import Section_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Section__pb2
 
 
@@ -24,9 +24,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\nBpyproto/com.tencent.qqlive.protocol.pb.ChangeSectionResponse.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Attent.proto\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Action.proto\x1a?pyproto/com.tencent.qqlive.protocol.pb.VideoIdKeyValueSet.proto\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Poster.proto\x1a\x34pyproto/com.tencent.qqlive.protocol.pb.Section.proto\"\x9a\x02\n\x15\x43hangeSectionResponse\x12=\n\x07section\x18\x01 \x01(\x0b\x32\'.com.tencent.qqlive.protocol.pb.SectionH\x00\x88\x01\x01\x12Z\n\x0bsection_map\x18\x02 \x03(\x0b\x32\x45.com.tencent.qqlive.protocol.pb.ChangeSectionResponse.SectionMapEntry\x1aZ\n\x0fSectionMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x36\n\x05value\x18\x02 \x01(\x0b\x32\'.com.tencent.qqlive.protocol.pb.Section:\x02\x38\x01\x42\n\n\x08_sectionb\x06proto3'
+  serialized_pb=b'\nBpyproto/com.tencent.qqlive.protocol.pb.ChangeSectionResponse.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a?pyproto/com.tencent.qqlive.protocol.pb.VideoIdKeyValueSet.proto\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Poster.proto\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Attent.proto\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Action.proto\x1a\x34pyproto/com.tencent.qqlive.protocol.pb.Section.proto\"\x9a\x02\n\x15\x43hangeSectionResponse\x12=\n\x07section\x18\x01 \x01(\x0b\x32\'.com.tencent.qqlive.protocol.pb.SectionH\x00\x88\x01\x01\x12Z\n\x0bsection_map\x18\x02 \x03(\x0b\x32\x45.com.tencent.qqlive.protocol.pb.ChangeSectionResponse.SectionMapEntry\x1aZ\n\x0fSectionMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x36\n\x05value\x18\x02 \x01(\x0b\x32\'.com.tencent.qqlive.protocol.pb.Section:\x02\x38\x01\x42\n\n\x08_sectionb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Attent__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Action__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_VideoIdKeyValueSet__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Section__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_VideoIdKeyValueSet__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Attent__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Action__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Section__pb2.DESCRIPTOR,])
 
 
 

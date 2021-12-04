@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package tbclient;
+
+message Error {
+    optional int32 errorno = 1;
+    optional string errmsg = 2;
+    optional string usermsg = 3;
+}

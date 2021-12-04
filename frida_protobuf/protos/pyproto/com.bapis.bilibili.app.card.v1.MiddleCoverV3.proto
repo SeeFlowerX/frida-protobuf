@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package com.bapis.bilibili.app.card.v1;
 
-import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
 
 message MiddleCoverV3 {
     optional Base base = 1;

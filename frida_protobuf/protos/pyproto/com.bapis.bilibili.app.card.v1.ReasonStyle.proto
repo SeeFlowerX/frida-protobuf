@@ -17,5 +17,5 @@ message ReasonStyle {
     optional string icon_bg_url = 12;
     optional string event = 13;
     optional int32 right_icon_type = 15;
-    optional string left_live_icon_type = 16;
+    optional string left_icon_type = 16;
 }

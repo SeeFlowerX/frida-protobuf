@@ -3,9 +3,9 @@ syntax = "proto3";
 package com.tencent.qqlive.protocol.pb;
 
 import "pyproto/com.tencent.qqlive.protocol.pb.AttentUIInfo.proto";
-import "pyproto/com.tencent.qqlive.protocol.pb.AttentFakeDisplayInfo.proto";
-import "pyproto/com.tencent.qqlive.protocol.pb.CalendarItem.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.AttentTimeConfigType.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.CalendarItem.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.AttentFakeDisplayInfo.proto";
 
 message Attent {
     optional string attent_key = 1;

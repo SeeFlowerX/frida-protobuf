@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n;pyproto/com.bapis.bilibili.app.show.popular.v1.Config.proto\x12&com.bapis.bilibili.app.show.popular.v1\x1a\x41pyproto/com.bapis.bilibili.app.show.popular.v1.EntranceShow.proto\"\xfd\x02\n\x06\x43onfig\x12\x17\n\nitem_title\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x18\n\x0b\x62ottom_text\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x1e\n\x11\x62ottom_text_cover\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x1c\n\x0f\x62ottom_text_url\x18\x04 \x01(\tH\x03\x88\x01\x01\x12G\n\ttop_items\x18\x05 \x03(\x0b\x32\x34.com.bapis.bilibili.app.show.popular.v1.EntranceShow\x12\x17\n\nhead_image\x18\x06 \x01(\tH\x04\x88\x01\x01\x12H\n\npage_items\x18\x07 \x03(\x0b\x32\x34.com.bapis.bilibili.app.show.popular.v1.EntranceShowB\r\n\x0b_item_titleB\x0e\n\x0c_bottom_textB\x14\n\x12_bottom_text_coverB\x12\n\x10_bottom_text_urlB\r\n\x0b_head_imageb\x06proto3'
+  serialized_pb=b'\n;pyproto/com.bapis.bilibili.app.show.popular.v1.Config.proto\x12&com.bapis.bilibili.app.show.popular.v1\x1a\x41pyproto/com.bapis.bilibili.app.show.popular.v1.EntranceShow.proto\"\x97\x03\n\x06\x43onfig\x12\x17\n\nitem_title\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x18\n\x0b\x62ottom_text\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x1e\n\x11\x62ottom_text_cover\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x1c\n\x0f\x62ottom_text_url\x18\x04 \x01(\tH\x03\x88\x01\x01\x12G\n\ttop_items\x18\x05 \x03(\x0b\x32\x34.com.bapis.bilibili.app.show.popular.v1.EntranceShow\x12\x17\n\nhead_image\x18\x06 \x01(\tH\x04\x88\x01\x01\x12H\n\npage_items\x18\x07 \x03(\x0b\x32\x34.com.bapis.bilibili.app.show.popular.v1.EntranceShow\x12\x10\n\x03hit\x18\x08 \x01(\x03H\x05\x88\x01\x01\x42\r\n\x0b_item_titleB\x0e\n\x0c_bottom_textB\x14\n\x12_bottom_text_coverB\x12\n\x10_bottom_text_urlB\r\n\x0b_head_imageB\x06\n\x04_hitb\x06proto3'
   ,
   dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_show_dot_popular_dot_v1_dot_EntranceShow__pb2.DESCRIPTOR,])
 
@@ -84,6 +84,13 @@ _CONFIG = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='hit', full_name='com.bapis.bilibili.app.show.popular.v1.Config.hit', index=7,
+      number=8, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -120,9 +127,14 @@ _CONFIG = _descriptor.Descriptor(
       index=4, containing_type=None,
       create_key=_descriptor._internal_create_key,
     fields=[]),
+    _descriptor.OneofDescriptor(
+      name='_hit', full_name='com.bapis.bilibili.app.show.popular.v1.Config._hit',
+      index=5, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=171,
-  serialized_end=552,
+  serialized_end=578,
 )
 
 _CONFIG.fields_by_name['top_items'].message_type = pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_show_dot_popular_dot_v1_dot_EntranceShow__pb2._ENTRANCESHOW
@@ -142,6 +154,9 @@ _CONFIG.fields_by_name['bottom_text_url'].containing_oneof = _CONFIG.oneofs_by_n
 _CONFIG.oneofs_by_name['_head_image'].fields.append(
   _CONFIG.fields_by_name['head_image'])
 _CONFIG.fields_by_name['head_image'].containing_oneof = _CONFIG.oneofs_by_name['_head_image']
+_CONFIG.oneofs_by_name['_hit'].fields.append(
+  _CONFIG.fields_by_name['hit'])
+_CONFIG.fields_by_name['hit'].containing_oneof = _CONFIG.oneofs_by_name['_hit']
 DESCRIPTOR.message_types_by_name['Config'] = _CONFIG
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

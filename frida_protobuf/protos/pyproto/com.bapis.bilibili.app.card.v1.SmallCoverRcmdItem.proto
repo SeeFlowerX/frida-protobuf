@@ -14,4 +14,6 @@ message SmallCoverRcmdItem {
     optional string cover_gif = 9;
     optional int32 right_icon_1 = 10;
     optional int32 right_icon_2 = 11;
+    optional string cover_right_text_content_description = 12;
+    optional string right_desc_1_content_description = 13;
 }

@@ -9,6 +9,8 @@
 
 **原生通用的脚本编写√**
 
+**当前转换逻辑可能无法正确处理内部类，但frida_protobuf/configs包含了内部类的信息，如果无法直接转换，请自行处理**
+
 特性
 
 - string int32 int64 bool 常规类型转换
@@ -96,7 +98,7 @@ chmod +x /data/local/tmp/fs14218
 
 ### 案例一
 
-- `com.tencent.qqlive` 版本号 `21854`
+- `com.tencent.qqlive` 版本号 `26446`
 
 ```bash
 python -m frida_protobuf.main -H 172.16.13.146:22222 -n com.tencent.qqlive --use-default-any --keywords-expected "com.tencent.qqlive.protocol.pb,com.tencent.spp_rpc"
@@ -111,7 +113,7 @@ python -m frida_protobuf.demo
 
 ### 案例二
 
-- `tv.danmaku.bili` 版本号 `6070600`
+- `tv.danmaku.bili` 版本号 `6510400`
 
 ```bash
 python -m frida_protobuf.main -H 172.16.13.146:22222 -n tv.danmaku.bili --use-default-any --keywords-expected "bili"
@@ -123,6 +125,16 @@ python -m frida_protobuf.demo2
 [效果演示](http://pan.iqiyi.com/file/paopao/-wM1eKewn9snMIg6XqAZnoiN-u5RIEQ9tacPZ-O3-ntZz6WUzK-nCgGd2VnSsl0rRB3g3fxzardI5ZtwvkiNpg.gif)
 
 [效果视频](http://pan.iqiyi.com/file/paopao/VjPzEqNkQt16avGaqcWwfMRHTZ71KTvpCKCddL80Tc73fxOT5rA5angpGnvmVPPKCVBwn6nV5TDFGLembmg2_Q.mp4)
+
+### 案例三
+
+- `com.baidu.tieba` 版本号 `202309888`
+
+```bash
+python -m frida_protobuf.main -n com.baidu.tieba --use-default-any --keywords-expected "protobuf,tbclient"
+python -m frida_protobuf.generate --proto tbclient.GetBubbleList.GetBubbleListResIdl
+python -m frida_protobuf.proto2py --proto tbclient.GetBubbleList.GetBubbleListResIdl
+```
 
 # 补充
 

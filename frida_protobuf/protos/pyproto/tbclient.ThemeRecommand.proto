@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package tbclient;
+
+message ThemeRecommand {
+    optional string icon = 1;
+    optional string tip_text = 2;
+    optional string button_url = 3;
+    optional string button_text = 4;
+}

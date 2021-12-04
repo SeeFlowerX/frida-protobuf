@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.tencent.qqlive.protocol.pb import VideoIdSet_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_VideoIdSet__pb2
 from pyproto.com.tencent.qqlive.protocol.pb import Poster_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2
+from pyproto.com.tencent.qqlive.protocol.pb import VideoIdSet_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_VideoIdSet__pb2
 from pyproto.com.tencent.qqlive.protocol.pb import Operation_pb2 as pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Operation__pb2
 
 
@@ -22,9 +22,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\nBpyproto/com.tencent.qqlive.protocol.pb.AttentFakeDisplayInfo.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x37pyproto/com.tencent.qqlive.protocol.pb.VideoIdSet.proto\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Poster.proto\x1a\x36pyproto/com.tencent.qqlive.protocol.pb.Operation.proto\"\x82\x02\n\x15\x41ttentFakeDisplayInfo\x12;\n\x06poster\x18\x01 \x01(\x0b\x32&.com.tencent.qqlive.protocol.pb.PosterH\x00\x88\x01\x01\x12>\n\x06\x61\x63tion\x18\x02 \x01(\x0b\x32).com.tencent.qqlive.protocol.pb.OperationH\x01\x88\x01\x01\x12\x45\n\x0cvideo_id_set\x18\x03 \x01(\x0b\x32*.com.tencent.qqlive.protocol.pb.VideoIdSetH\x02\x88\x01\x01\x42\t\n\x07_posterB\t\n\x07_actionB\x0f\n\r_video_id_setb\x06proto3'
+  serialized_pb=b'\nBpyproto/com.tencent.qqlive.protocol.pb.AttentFakeDisplayInfo.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Poster.proto\x1a\x37pyproto/com.tencent.qqlive.protocol.pb.VideoIdSet.proto\x1a\x36pyproto/com.tencent.qqlive.protocol.pb.Operation.proto\"\x82\x02\n\x15\x41ttentFakeDisplayInfo\x12;\n\x06poster\x18\x01 \x01(\x0b\x32&.com.tencent.qqlive.protocol.pb.PosterH\x00\x88\x01\x01\x12>\n\x06\x61\x63tion\x18\x02 \x01(\x0b\x32).com.tencent.qqlive.protocol.pb.OperationH\x01\x88\x01\x01\x12\x45\n\x0cvideo_id_set\x18\x03 \x01(\x0b\x32*.com.tencent.qqlive.protocol.pb.VideoIdSetH\x02\x88\x01\x01\x42\t\n\x07_posterB\t\n\x07_actionB\x0f\n\r_video_id_setb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_VideoIdSet__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Operation__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_VideoIdSet__pb2.DESCRIPTOR,pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Operation__pb2.DESCRIPTOR,])
 
 
 

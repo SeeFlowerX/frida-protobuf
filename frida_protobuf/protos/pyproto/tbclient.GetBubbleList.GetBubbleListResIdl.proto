@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package tbclient.GetBubbleList;
+
+import "pyproto/tbclient.Error.proto";
+import "pyproto/tbclient.GetBubbleList.DataRes.proto";
+
+message GetBubbleListResIdl {
+    optional DataRes data = 1;
+    optional tbclient.Error error = 2;
+}

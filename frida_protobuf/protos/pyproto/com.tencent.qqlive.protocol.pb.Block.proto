@@ -2,12 +2,12 @@ syntax = "proto3";
 
 package com.tencent.qqlive.protocol.pb;
 
-import "pyproto/com.tencent.qqlive.protocol.pb.BlockType.proto";
-import "pyproto/com.tencent.qqlive.protocol.pb.ExtraData.proto";
-import "google/protobuf/any.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.MarkLabelList.proto";
-import "pyproto/com.tencent.qqlive.protocol.pb.CSSStruct.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.Operation.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.ExtraData.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.BlockType.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.CSSStruct.proto";
+import "google/protobuf/any.proto";
 
 message Block {
     optional BlockType block_type = 1;

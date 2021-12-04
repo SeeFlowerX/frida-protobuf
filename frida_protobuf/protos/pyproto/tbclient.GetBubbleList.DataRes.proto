@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package tbclient.GetBubbleList;
+
+import "pyproto/tbclient.ThemeBgProp.proto";
+import "pyproto/tbclient.ThemeRecommand.proto";
+
+message DataRes {
+    optional tbclient.ThemeRecommand recommend = 1;
+    repeated tbclient.ThemeBgProp bubbles = 2;
+    optional uint32 hasmore = 3;
+    optional uint32 is_default = 4;
+}

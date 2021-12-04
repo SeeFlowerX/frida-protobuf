@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import ThreeItemV1Item_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ThreeItemV1Item__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -21,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n8pyproto/com.bapis.bilibili.app.card.v1.ThreeItemV1.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\x1a<pyproto/com.bapis.bilibili.app.card.v1.ThreeItemV1Item.proto\"\x81\x02\n\x0bThreeItemV1\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12\x17\n\ntitle_icon\x18\x02 \x01(\x05H\x01\x88\x01\x01\x12\x15\n\x08more_uri\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x16\n\tmore_text\x18\x04 \x01(\tH\x03\x88\x01\x01\x12>\n\x05items\x18\x05 \x03(\x0b\x32/.com.bapis.bilibili.app.card.v1.ThreeItemV1ItemB\x07\n\x05_baseB\r\n\x0b_title_iconB\x0b\n\t_more_uriB\x0c\n\n_more_textb\x06proto3'
+  serialized_pb=b'\n8pyproto/com.bapis.bilibili.app.card.v1.ThreeItemV1.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a<pyproto/com.bapis.bilibili.app.card.v1.ThreeItemV1Item.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\"\x81\x02\n\x0bThreeItemV1\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12\x17\n\ntitle_icon\x18\x02 \x01(\x05H\x01\x88\x01\x01\x12\x15\n\x08more_uri\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x16\n\tmore_text\x18\x04 \x01(\tH\x03\x88\x01\x01\x12>\n\x05items\x18\x05 \x03(\x0b\x32/.com.bapis.bilibili.app.card.v1.ThreeItemV1ItemB\x07\n\x05_baseB\r\n\x0b_title_iconB\x0b\n\t_more_uriB\x0c\n\n_more_textb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ThreeItemV1Item__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ThreeItemV1Item__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,])
 
 
 

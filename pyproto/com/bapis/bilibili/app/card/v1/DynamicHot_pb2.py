@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import ReasonStyle_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -21,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n7pyproto/com.bapis.bilibili.app.card.v1.DynamicHot.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\x1a\x38pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto\"\xf7\x02\n\nDynamicHot\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12\x1b\n\x0etop_left_title\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x15\n\x08more_uri\x18\x05 \x01(\tH\x02\x88\x01\x01\x12\x16\n\tmore_text\x18\x06 \x01(\tH\x03\x88\x01\x01\x12\x0e\n\x06\x63overs\x18\x07 \x03(\t\x12\x1d\n\x10\x63over_right_text\x18\x08 \x01(\tH\x04\x88\x01\x01\x12O\n\x15top_rcmd_reason_style\x18\t \x01(\x0b\x32+.com.bapis.bilibili.app.card.v1.ReasonStyleH\x05\x88\x01\x01\x42\x07\n\x05_baseB\x11\n\x0f_top_left_titleB\x0b\n\t_more_uriB\x0c\n\n_more_textB\x13\n\x11_cover_right_textB\x18\n\x16_top_rcmd_reason_styleb\x06proto3'
+  serialized_pb=b'\n7pyproto/com.bapis.bilibili.app.card.v1.DynamicHot.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x38pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\"\xf7\x02\n\nDynamicHot\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12\x1b\n\x0etop_left_title\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x15\n\x08more_uri\x18\x05 \x01(\tH\x02\x88\x01\x01\x12\x16\n\tmore_text\x18\x06 \x01(\tH\x03\x88\x01\x01\x12\x0e\n\x06\x63overs\x18\x07 \x03(\t\x12\x1d\n\x10\x63over_right_text\x18\x08 \x01(\tH\x04\x88\x01\x01\x12O\n\x15top_rcmd_reason_style\x18\t \x01(\x0b\x32+.com.bapis.bilibili.app.card.v1.ReasonStyleH\x05\x88\x01\x01\x42\x07\n\x05_baseB\x11\n\x0f_top_left_titleB\x0b\n\t_more_uriB\x0c\n\n_more_textB\x13\n\x11_cover_right_textB\x18\n\x16_top_rcmd_reason_styleb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,])
 
 
 

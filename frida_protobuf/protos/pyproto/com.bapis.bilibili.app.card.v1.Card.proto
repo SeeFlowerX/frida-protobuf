@@ -2,16 +2,16 @@ syntax = "proto3";
 
 package com.bapis.bilibili.app.card.v1;
 
-import "pyproto/com.bapis.bilibili.app.card.v1.SmallCoverV5.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ThreeItemAllV2.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.LargeCoverV4.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.PopularTopEntrance.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.DynamicHot.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.SmallCoverV5.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.ThreeItemV1.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.HotTopic.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.ThreeItemAllV2.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.PopularTopEntrance.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.MiddleCoverV3.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.RcmdOneItem.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.LargeCoverV1.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.LargeCoverV4.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.MiddleCoverV3.proto";
 
 message Card {
     oneof item {

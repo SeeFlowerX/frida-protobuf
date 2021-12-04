@@ -4,8 +4,8 @@ package com.bapis.bilibili.app.card.v1;
 
 import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.Avatar.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.LikeButton.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Avatar.proto";
 
 message LargeCoverV1 {
     optional Base base = 1;

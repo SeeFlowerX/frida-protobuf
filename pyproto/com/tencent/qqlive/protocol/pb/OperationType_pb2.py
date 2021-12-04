@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n:pyproto/com.tencent.qqlive.protocol.pb.OperationType.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb*\xa0\x08\n\rOperationType\x12\x19\n\x15OPERATION_TYPE_ACTION\x10\x00\x12\x19\n\x15OPERATION_TYPE_ATTENT\x10\x01\x12\x18\n\x14OPERATION_TYPE_SHARE\x10\x02\x12\x19\n\x15OPERATION_TYPE_PRAISE\x10\x03\x12\x1b\n\x17OPERATION_TYPE_DOWNLOAD\x10\x04\x12\x1b\n\x17OPERATION_TYPE_FEEDBACK\x10\x05\x12\x1d\n\x19OPERATION_TYPE_PLAY_VIDEO\x10\x06\x12\x1e\n\x1aOPERATION_TYPE_SCROLL_LIST\x10\x08\x12!\n\x1dOPERATION_TYPE_CHANGE_SECTION\x10\t\x12#\n\x1fOPERATION_TYPE_EXTRA_BLOCK_LIST\x10\n\x12\x19\n\x15OPERATION_TYPE_REPORT\x10\x0b\x12\x19\n\x15OPERATION_TYPE_FOLLOW\x10\x0c\x12 \n\x1cOPERATION_TYPE_SCHEME_ACTION\x10\r\x12+\n\'OPERATION_TYPE_TRANSITION_IMAGE_PREVIEW\x10\x0e\x12\x18\n\x14OPERATION_TYPE_EMPTY\x10\x0f\x12\x1a\n\x16OPERATION_TYPE_COMMENT\x10\x10\x12\"\n\x1eOPERATION_TYPE_REFRESH_SECTION\x10\x11\x12\x19\n\x15OPERATION_TYPE_SEARCH\x10\x12\x12#\n\x1fOPERATION_TYPE_INTERACT_TRIGGER\x10\x13\x12\x1f\n\x1bOPERATION_TYPE_FLIP_SECTION\x10\x14\x12\x1f\n\x1bOPERATION_TYPE_INTERFERENCE\x10\x15\x12)\n%OPERATION_TYPE_INSERT_NEW_LINE_CONFIG\x10\x16\x12\x1c\n\x18OPERATION_TYPE_CARD_FLOP\x10\x17\x12\x1e\n\x1aOPERATION_TYPE_TITLE_TOPIC\x10\x18\x12$\n OPERATION_TYPE_FLOP_CARD_OPERATE\x10\x19\x12!\n\x1dOPERATION_TYPE_FLOP_CARD_INFO\x10\x1a\x12 \n\x1cOPERATION_TYPE_POPUP_CONTENT\x10\x1b\x12$\n OPERATION_TYPE_USER_INFO_RED_DOT\x10\x1c\x12$\n OPERATION_TYPE_CREATOR_JUMP_PAGE\x10\x1d\x12\x1c\n\x18OPERATION_TYPE_SUBSCRIBE\x10\x1e\x12#\n\x1fOPERATION_TYPE_SHOW_OPER_DIALOG\x10\x1f\x12\x1f\n\x1bOPERATION_TYPE_COMMON_FLOAT\x10 b\x06proto3'
+  serialized_pb=b'\n:pyproto/com.tencent.qqlive.protocol.pb.OperationType.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb*\xfa\x0b\n\rOperationType\x12\x19\n\x15OPERATION_TYPE_ACTION\x10\x00\x12\x19\n\x15OPERATION_TYPE_ATTENT\x10\x01\x12\x18\n\x14OPERATION_TYPE_SHARE\x10\x02\x12\x19\n\x15OPERATION_TYPE_PRAISE\x10\x03\x12\x1b\n\x17OPERATION_TYPE_DOWNLOAD\x10\x04\x12\x1b\n\x17OPERATION_TYPE_FEEDBACK\x10\x05\x12\x1d\n\x19OPERATION_TYPE_PLAY_VIDEO\x10\x06\x12\x1e\n\x1aOPERATION_TYPE_SCROLL_LIST\x10\x08\x12!\n\x1dOPERATION_TYPE_CHANGE_SECTION\x10\t\x12#\n\x1fOPERATION_TYPE_EXTRA_BLOCK_LIST\x10\n\x12\x19\n\x15OPERATION_TYPE_REPORT\x10\x0b\x12\x19\n\x15OPERATION_TYPE_FOLLOW\x10\x0c\x12 \n\x1cOPERATION_TYPE_SCHEME_ACTION\x10\r\x12+\n\'OPERATION_TYPE_TRANSITION_IMAGE_PREVIEW\x10\x0e\x12\x18\n\x14OPERATION_TYPE_EMPTY\x10\x0f\x12\x1a\n\x16OPERATION_TYPE_COMMENT\x10\x10\x12\"\n\x1eOPERATION_TYPE_REFRESH_SECTION\x10\x11\x12\x19\n\x15OPERATION_TYPE_SEARCH\x10\x12\x12#\n\x1fOPERATION_TYPE_INTERACT_TRIGGER\x10\x13\x12\x1f\n\x1bOPERATION_TYPE_FLIP_SECTION\x10\x14\x12\x1f\n\x1bOPERATION_TYPE_INTERFERENCE\x10\x15\x12)\n%OPERATION_TYPE_INSERT_NEW_LINE_CONFIG\x10\x16\x12\x1c\n\x18OPERATION_TYPE_CARD_FLOP\x10\x17\x12\x1e\n\x1aOPERATION_TYPE_TITLE_TOPIC\x10\x18\x12$\n OPERATION_TYPE_FLOP_CARD_OPERATE\x10\x19\x12!\n\x1dOPERATION_TYPE_FLOP_CARD_INFO\x10\x1a\x12 \n\x1cOPERATION_TYPE_POPUP_CONTENT\x10\x1b\x12$\n OPERATION_TYPE_USER_INFO_RED_DOT\x10\x1c\x12$\n OPERATION_TYPE_CREATOR_JUMP_PAGE\x10\x1d\x12\x1c\n\x18OPERATION_TYPE_SUBSCRIBE\x10\x1e\x12#\n\x1fOPERATION_TYPE_SHOW_OPER_DIALOG\x10\x1f\x12\x1f\n\x1bOPERATION_TYPE_COMMON_FLOAT\x10 \x12 \n\x1cOPERATION_TYPE_SIMPLE_PLAYER\x10!\x12!\n\x1dOPERATION_TYPE_MESSAGE_DELETE\x10\"\x12\x1d\n\x19OPERATION_TYPE_TOAST_INFO\x10#\x12(\n$OPERATION_TYPE_CREATOR_VIDEO_OPERATE\x10$\x12\x1b\n\x17OPERATION_TYPE_ATTITUDE\x10%\x12 \n\x1cOPERATION_TYPE_UPDATE_ALBUMS\x10&\x12(\n$OPERATION_TYPE_UPDATE_ALBUMS_DEFAULT\x10\'\x12!\n\x1dOPERATION_TYPE_REPLACE_MODULE\x10(\x12+\n\'OPERATION_TYPE_COMMON_NEGATIVE_FEEDBACK\x10)\x12&\n\"OPERATION_TYPE_TRAFFIC_SPREAD_INFO\x10*\x12#\n\x1fOPERATION_TYPE_TOPIC_BOOST_INFO\x10+\x12!\n\x1dOPERATION_TYPE_GAME_BASE_INFO\x10,\x12!\n\x1dOPERATION_TYPE_GAME_BOOK_INFO\x10-b\x06proto3'
 )
 
 _OPERATIONTYPE = _descriptor.EnumDescriptor(
@@ -190,11 +190,76 @@ _OPERATIONTYPE = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_SIMPLE_PLAYER', index=32, number=33,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_MESSAGE_DELETE', index=33, number=34,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_TOAST_INFO', index=34, number=35,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_CREATOR_VIDEO_OPERATE', index=35, number=36,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_ATTITUDE', index=36, number=37,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_UPDATE_ALBUMS', index=37, number=38,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_UPDATE_ALBUMS_DEFAULT', index=38, number=39,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_REPLACE_MODULE', index=39, number=40,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_COMMON_NEGATIVE_FEEDBACK', index=40, number=41,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_TRAFFIC_SPREAD_INFO', index=41, number=42,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_TOPIC_BOOST_INFO', index=42, number=43,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_GAME_BASE_INFO', index=43, number=44,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='OPERATION_TYPE_GAME_BOOK_INFO', index=44, number=45,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=95,
-  serialized_end=1151,
+  serialized_end=1625,
 )
 _sym_db.RegisterEnumDescriptor(_OPERATIONTYPE)
 
@@ -231,6 +296,19 @@ OPERATION_TYPE_CREATOR_JUMP_PAGE = 29
 OPERATION_TYPE_SUBSCRIBE = 30
 OPERATION_TYPE_SHOW_OPER_DIALOG = 31
 OPERATION_TYPE_COMMON_FLOAT = 32
+OPERATION_TYPE_SIMPLE_PLAYER = 33
+OPERATION_TYPE_MESSAGE_DELETE = 34
+OPERATION_TYPE_TOAST_INFO = 35
+OPERATION_TYPE_CREATOR_VIDEO_OPERATE = 36
+OPERATION_TYPE_ATTITUDE = 37
+OPERATION_TYPE_UPDATE_ALBUMS = 38
+OPERATION_TYPE_UPDATE_ALBUMS_DEFAULT = 39
+OPERATION_TYPE_REPLACE_MODULE = 40
+OPERATION_TYPE_COMMON_NEGATIVE_FEEDBACK = 41
+OPERATION_TYPE_TRAFFIC_SPREAD_INFO = 42
+OPERATION_TYPE_TOPIC_BOOST_INFO = 43
+OPERATION_TYPE_GAME_BASE_INFO = 44
+OPERATION_TYPE_GAME_BOOK_INFO = 45
 
 
 DESCRIPTOR.enum_types_by_name['OperationType'] = _OPERATIONTYPE

@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n?pyproto/com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\"\xb2\x03\n\x12SmallCoverRcmdItem\x12\x12\n\x05title\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x12\n\x05\x63over\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x10\n\x03uri\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x12\n\x05param\x18\x04 \x01(\tH\x03\x88\x01\x01\x12\x11\n\x04goto\x18\x05 \x01(\tH\x04\x88\x01\x01\x12\x1f\n\x12\x63over_right_text_1\x18\x06 \x01(\tH\x05\x88\x01\x01\x12\x19\n\x0cright_desc_1\x18\x07 \x01(\tH\x06\x88\x01\x01\x12\x19\n\x0cright_desc_2\x18\x08 \x01(\tH\x07\x88\x01\x01\x12\x16\n\tcover_gif\x18\t \x01(\tH\x08\x88\x01\x01\x12\x19\n\x0cright_icon_1\x18\n \x01(\x05H\t\x88\x01\x01\x12\x19\n\x0cright_icon_2\x18\x0b \x01(\x05H\n\x88\x01\x01\x42\x08\n\x06_titleB\x08\n\x06_coverB\x06\n\x04_uriB\x08\n\x06_paramB\x07\n\x05_gotoB\x15\n\x13_cover_right_text_1B\x0f\n\r_right_desc_1B\x0f\n\r_right_desc_2B\x0c\n\n_cover_gifB\x0f\n\r_right_icon_1B\x0f\n\r_right_icon_2b\x06proto3'
+  serialized_pb=b'\n?pyproto/com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\"\xe2\x04\n\x12SmallCoverRcmdItem\x12\x12\n\x05title\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x12\n\x05\x63over\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x10\n\x03uri\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x12\n\x05param\x18\x04 \x01(\tH\x03\x88\x01\x01\x12\x11\n\x04goto\x18\x05 \x01(\tH\x04\x88\x01\x01\x12\x1f\n\x12\x63over_right_text_1\x18\x06 \x01(\tH\x05\x88\x01\x01\x12\x19\n\x0cright_desc_1\x18\x07 \x01(\tH\x06\x88\x01\x01\x12\x19\n\x0cright_desc_2\x18\x08 \x01(\tH\x07\x88\x01\x01\x12\x16\n\tcover_gif\x18\t \x01(\tH\x08\x88\x01\x01\x12\x19\n\x0cright_icon_1\x18\n \x01(\x05H\t\x88\x01\x01\x12\x19\n\x0cright_icon_2\x18\x0b \x01(\x05H\n\x88\x01\x01\x12\x31\n$cover_right_text_content_description\x18\x0c \x01(\tH\x0b\x88\x01\x01\x12-\n right_desc_1_content_description\x18\r \x01(\tH\x0c\x88\x01\x01\x42\x08\n\x06_titleB\x08\n\x06_coverB\x06\n\x04_uriB\x08\n\x06_paramB\x07\n\x05_gotoB\x15\n\x13_cover_right_text_1B\x0f\n\r_right_desc_1B\x0f\n\r_right_desc_2B\x0c\n\n_cover_gifB\x0f\n\r_right_icon_1B\x0f\n\r_right_icon_2B\'\n%_cover_right_text_content_descriptionB#\n!_right_desc_1_content_descriptionb\x06proto3'
 )
 
 
@@ -110,6 +110,20 @@ _SMALLCOVERRCMDITEM = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='cover_right_text_content_description', full_name='com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem.cover_right_text_content_description', index=11,
+      number=12, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='right_desc_1_content_description', full_name='com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem.right_desc_1_content_description', index=12,
+      number=13, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -176,9 +190,19 @@ _SMALLCOVERRCMDITEM = _descriptor.Descriptor(
       index=10, containing_type=None,
       create_key=_descriptor._internal_create_key,
     fields=[]),
+    _descriptor.OneofDescriptor(
+      name='_cover_right_text_content_description', full_name='com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem._cover_right_text_content_description',
+      index=11, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
+    _descriptor.OneofDescriptor(
+      name='_right_desc_1_content_description', full_name='com.bapis.bilibili.app.card.v1.SmallCoverRcmdItem._right_desc_1_content_description',
+      index=12, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=100,
-  serialized_end=534,
+  serialized_end=710,
 )
 
 _SMALLCOVERRCMDITEM.oneofs_by_name['_title'].fields.append(
@@ -214,6 +238,12 @@ _SMALLCOVERRCMDITEM.fields_by_name['right_icon_1'].containing_oneof = _SMALLCOVE
 _SMALLCOVERRCMDITEM.oneofs_by_name['_right_icon_2'].fields.append(
   _SMALLCOVERRCMDITEM.fields_by_name['right_icon_2'])
 _SMALLCOVERRCMDITEM.fields_by_name['right_icon_2'].containing_oneof = _SMALLCOVERRCMDITEM.oneofs_by_name['_right_icon_2']
+_SMALLCOVERRCMDITEM.oneofs_by_name['_cover_right_text_content_description'].fields.append(
+  _SMALLCOVERRCMDITEM.fields_by_name['cover_right_text_content_description'])
+_SMALLCOVERRCMDITEM.fields_by_name['cover_right_text_content_description'].containing_oneof = _SMALLCOVERRCMDITEM.oneofs_by_name['_cover_right_text_content_description']
+_SMALLCOVERRCMDITEM.oneofs_by_name['_right_desc_1_content_description'].fields.append(
+  _SMALLCOVERRCMDITEM.fields_by_name['right_desc_1_content_description'])
+_SMALLCOVERRCMDITEM.fields_by_name['right_desc_1_content_description'].containing_oneof = _SMALLCOVERRCMDITEM.oneofs_by_name['_right_desc_1_content_description']
 DESCRIPTOR.message_types_by_name['SmallCoverRcmdItem'] = _SMALLCOVERRCMDITEM
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

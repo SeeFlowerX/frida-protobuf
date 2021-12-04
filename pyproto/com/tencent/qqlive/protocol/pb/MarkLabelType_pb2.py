@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n:pyproto/com.tencent.qqlive.protocol.pb.MarkLabelType.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb*g\n\rMarkLabelType\x12\x1f\n\x1bMARK_LABEL_TYPE_SINGLE_TEXT\x10\x00\x12\x19\n\x15MARK_LABEL_TYPE_IMAGE\x10\x01\x12\x1a\n\x16MARK_LABEL_TYPE_LOTTIE\x10\x02\x62\x06proto3'
+  serialized_pb=b'\n:pyproto/com.tencent.qqlive.protocol.pb.MarkLabelType.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb*\xd2\x01\n\rMarkLabelType\x12\x1f\n\x1bMARK_LABEL_TYPE_SINGLE_TEXT\x10\x00\x12\x19\n\x15MARK_LABEL_TYPE_IMAGE\x10\x01\x12\x1a\n\x16MARK_LABEL_TYPE_LOTTIE\x10\x02\x12*\n&MARK_LABEL_TYPE_LEFT_POSTER_RIGHT_TEXT\x10\x03\x12\x1a\n\x16MARK_LABEL_TYPE_NUMBER\x10\x04\x12!\n\x1dMARK_LABEL_TYPE_FIRST_CAPITAL\x10\x05\x62\x06proto3'
 )
 
 _MARKLABELTYPE = _descriptor.EnumDescriptor(
@@ -45,11 +45,26 @@ _MARKLABELTYPE = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='MARK_LABEL_TYPE_LEFT_POSTER_RIGHT_TEXT', index=3, number=3,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='MARK_LABEL_TYPE_NUMBER', index=4, number=4,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='MARK_LABEL_TYPE_FIRST_CAPITAL', index=5, number=5,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=94,
-  serialized_end=197,
+  serialized_start=95,
+  serialized_end=305,
 )
 _sym_db.RegisterEnumDescriptor(_MARKLABELTYPE)
 
@@ -57,6 +72,9 @@ MarkLabelType = enum_type_wrapper.EnumTypeWrapper(_MARKLABELTYPE)
 MARK_LABEL_TYPE_SINGLE_TEXT = 0
 MARK_LABEL_TYPE_IMAGE = 1
 MARK_LABEL_TYPE_LOTTIE = 2
+MARK_LABEL_TYPE_LEFT_POSTER_RIGHT_TEXT = 3
+MARK_LABEL_TYPE_NUMBER = 4
+MARK_LABEL_TYPE_FIRST_CAPITAL = 5
 
 
 DESCRIPTOR.enum_types_by_name['MarkLabelType'] = _MARKLABELTYPE

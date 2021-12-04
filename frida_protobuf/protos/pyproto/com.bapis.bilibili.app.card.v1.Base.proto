@@ -2,11 +2,12 @@ syntax = "proto3";
 
 package com.bapis.bilibili.app.card.v1;
 
-import "pyproto/com.bapis.bilibili.app.card.v1.Args.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.UpArgs.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.AdInfo.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Mask.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.Button.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.ThreePoint.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.Mask.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.AdInfo.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.Args.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.PlayerArgs.proto";
 
 message Base {
@@ -25,4 +26,5 @@ message Base {
     optional Mask mask = 13;
     optional string from_type = 14;
     optional Button desc_button = 17;
+    optional UpArgs up_args = 19;
 }

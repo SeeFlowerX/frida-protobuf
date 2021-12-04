@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.bapis.bilibili.app.show.popular.v1 import Config_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_show_dot_popular_dot_v1_dot_Config__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import Card_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Card__pb2
+from pyproto.com.bapis.bilibili.app.show.popular.v1 import Config_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_show_dot_popular_dot_v1_dot_Config__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -21,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\nApyproto/com.bapis.bilibili.app.show.popular.v1.PopularReply.proto\x12&com.bapis.bilibili.app.show.popular.v1\x1a;pyproto/com.bapis.bilibili.app.show.popular.v1.Config.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Card.proto\"\xad\x01\n\x0cPopularReply\x12\x33\n\x05items\x18\x01 \x03(\x0b\x32$.com.bapis.bilibili.app.card.v1.Card\x12\x43\n\x06\x63onfig\x18\x02 \x01(\x0b\x32..com.bapis.bilibili.app.show.popular.v1.ConfigH\x00\x88\x01\x01\x12\x10\n\x03ver\x18\x03 \x01(\tH\x01\x88\x01\x01\x42\t\n\x07_configB\x06\n\x04_verb\x06proto3'
+  serialized_pb=b'\nApyproto/com.bapis.bilibili.app.show.popular.v1.PopularReply.proto\x12&com.bapis.bilibili.app.show.popular.v1\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Card.proto\x1a;pyproto/com.bapis.bilibili.app.show.popular.v1.Config.proto\"\xad\x01\n\x0cPopularReply\x12\x33\n\x05items\x18\x01 \x03(\x0b\x32$.com.bapis.bilibili.app.card.v1.Card\x12\x43\n\x06\x63onfig\x18\x02 \x01(\x0b\x32..com.bapis.bilibili.app.show.popular.v1.ConfigH\x00\x88\x01\x01\x12\x10\n\x03ver\x18\x03 \x01(\tH\x01\x88\x01\x01\x42\t\n\x07_configB\x06\n\x04_verb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_show_dot_popular_dot_v1_dot_Config__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Card__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Card__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_show_dot_popular_dot_v1_dot_Config__pb2.DESCRIPTOR,])
 
 
 

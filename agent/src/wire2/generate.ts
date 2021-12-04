@@ -1,25 +1,15 @@
 import { send_log, generate_package, generate_enum_fields } from "../common"
-import {WireFieldCls, WireProtoFieldCls} from "../libjava"
+import {Wire2FieldCls, Wire2ProtoFieldCls} from "../libjava"
 
-export function generate_message(cls: any, use_default_any: boolean){
+export function generate_message_2(cls: any, use_default_any: boolean){
     let cls_config:{[key: string]: any} = {};
     Java.perform(function(){
         cls_config["type"] = "message";
         cls_config["package"] = generate_package(cls);
         cls_config["cls_name"] = `${cls.class.getSimpleName()}`;
-        try {
-            
         cls_config["fields_config"] = generate_message_fields_WireField(cls, use_default_any);
-        } catch (error) {
-        }
         if (cls_config["fields_config"].length == 0){
-            try {
-                
             cls_config["fields_config"] = generate_message_fields_ProtoField(cls, use_default_any);
-            } catch (error) {
-                
-            console.log("gdsccccg", error)
-            }
         }
     })
     return cls_config;
@@ -27,7 +17,7 @@ export function generate_message(cls: any, use_default_any: boolean){
 
 function generate_message_fields_WireField(cls: any, use_default_any: boolean){
     let fields_config: object[] = [];
-    if(!WireFieldCls) return fields_config;
+    if(!Wire2FieldCls) return fields_config;
     Java.perform(function(){
         function get_label(obj: any) {
             return `${obj.label()}`.toLowerCase()
@@ -65,7 +55,7 @@ function generate_message_fields_WireField(cls: any, use_default_any: boolean){
                 };
                 return {"need_import": need_import, "type": type, "package": import_pkg}
             }
-            let obj = Java.cast(annotation, WireFieldCls);
+            let obj = Java.cast(annotation, Wire2FieldCls);
             let name = field.getName();
             let label = get_label(obj);
             let tag = get_tag(obj);
@@ -96,7 +86,7 @@ function generate_message_fields_WireField(cls: any, use_default_any: boolean){
         }
         let fields = cls.class.getDeclaredFields();
         fields.forEach(function (field: any) {
-            let annotation = field.getAnnotation(WireFieldCls.class);
+            let annotation = field.getAnnotation(Wire2FieldCls.class);
             if(!annotation) return;
             let field_config = handler_annotation(field, annotation);
             fields_config.push(field_config);
@@ -105,7 +95,7 @@ function generate_message_fields_WireField(cls: any, use_default_any: boolean){
     return fields_config;
 }
 
-export function generate_enum(cls: any){
+export function generate_enum_2(cls: any){
     let cls_config:{[key: string]: any} = {};
     Java.perform(function(){
         Java.perform(function(){
@@ -120,7 +110,7 @@ export function generate_enum(cls: any){
 
 function generate_message_fields_ProtoField(cls: any, use_default_any: boolean){
     let fields_config: object[] = [];
-    if(!WireProtoFieldCls) return fields_config;
+    if(!Wire2ProtoFieldCls) return fields_config;
     Java.perform(function(){
         function get_label(obj: any) {
             return `${obj.label()}`.toLowerCase()
@@ -151,7 +141,7 @@ function generate_message_fields_ProtoField(cls: any, use_default_any: boolean){
                 }
                 return {"need_import": need_import, "type": type, "package": import_pkg};
             }
-            let obj = Java.cast(annotation, WireProtoFieldCls);
+            let obj = Java.cast(annotation, Wire2ProtoFieldCls);
             let name = field.getName();
             let label = get_label(obj);
             let tag = get_tag(obj);
@@ -169,7 +159,7 @@ function generate_message_fields_ProtoField(cls: any, use_default_any: boolean){
         }
         let fields = cls.class.getDeclaredFields();
         fields.forEach(function (field: any) {
-            let annotation = field.getAnnotation(WireProtoFieldCls.class);
+            let annotation = field.getAnnotation(Wire2ProtoFieldCls.class);
             if(!annotation) return;
             let field_config = handler_annotation(field, annotation);
             fields_config.push(field_config);

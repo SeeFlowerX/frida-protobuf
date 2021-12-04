@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package com.tencent.qqlive.protocol.pb;
 
+import "pyproto/com.tencent.qqlive.protocol.pb.SectionType.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.Operation.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.BlockList.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.ExtraData.proto";
-import "pyproto/com.tencent.qqlive.protocol.pb.SectionType.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.CSSStruct.proto";
-import "pyproto/com.tencent.qqlive.protocol.pb.Operation.proto";
 
 message Section {
     optional SectionType section_type = 1;

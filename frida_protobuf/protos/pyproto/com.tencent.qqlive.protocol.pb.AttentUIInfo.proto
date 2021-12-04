@@ -9,4 +9,5 @@ message AttentUIInfo {
     optional string attent_title = 2;
     optional Poster poster = 3;
     optional float release_time = 4;
+    optional Poster attent_poster = 5;
 }

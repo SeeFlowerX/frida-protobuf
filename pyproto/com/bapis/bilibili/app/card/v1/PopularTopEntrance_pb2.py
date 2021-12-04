@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import EntranceItem_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_EntranceItem__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -21,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n?pyproto/com.bapis.bilibili.app.card.v1.PopularTopEntrance.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\x1a\x39pyproto/com.bapis.bilibili.app.card.v1.EntranceItem.proto\"\x93\x01\n\x12PopularTopEntrance\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12;\n\x05items\x18\x02 \x03(\x0b\x32,.com.bapis.bilibili.app.card.v1.EntranceItemB\x07\n\x05_baseb\x06proto3'
+  serialized_pb=b'\n?pyproto/com.bapis.bilibili.app.card.v1.PopularTopEntrance.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x39pyproto/com.bapis.bilibili.app.card.v1.EntranceItem.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\"\x93\x01\n\x12PopularTopEntrance\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12;\n\x05items\x18\x02 \x03(\x0b\x32,.com.bapis.bilibili.app.card.v1.EntranceItemB\x07\n\x05_baseb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_EntranceItem__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_EntranceItem__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,])
 
 
 

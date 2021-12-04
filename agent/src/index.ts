@@ -1,9 +1,11 @@
 import { generate_enum, generate_message } from "./wire/generate"
+import { generate_message_2 } from "./wire2/generate"
 import { generate_messagelite } from "./google/generate"
 import { send_log } from "./common"
 import { InitClsClz } from "./libjava"
 import { 
     WireMessageClz,
+    Wire2MessageClz,
     GeneratedMessageLiteClz,
     ModifierCls,
     EnumClz,
@@ -61,9 +63,6 @@ export const GetAllMessageCls = (use_default_any: boolean, keyword_expected: str
         let nameSet = new Set();
         let dexfileSet = new Set();
         let SkipclassNameSet = new Set();
-        // let ModifierCls = Java.use("java.lang.reflect.Modifier")
-        // let WireMessageClz = Java.use("com.squareup.wire.Message").class;
-        // let EnumClz = Java.use("java.lang.Enum").class;
         let DexFileCls = Java.use("dalvik.system.DexFile");
         let BaseDexClassLoaderCls = Java.use("dalvik.system.BaseDexClassLoader");
         let DexPathListCls = Java.use("dalvik.system.DexPathList");
@@ -130,6 +129,11 @@ export const GetAllMessageCls = (use_default_any: boolean, keyword_expected: str
                                 nameSet.add(className)
                                 send_log(`[+] ${`${nameSet.size}`.padStart(5, ' ')} ${className}`)
                                 send(generate_message(cls, use_default_any));
+                            }
+                            if (Wire2MessageClz && Wire2MessageClz.equals(cls_super)) {
+                                nameSet.add(className)
+                                send_log(`[+] ${`${nameSet.size}`.padStart(5, ' ')} ${className}`)
+                                send(generate_message_2(cls, use_default_any));
                             }
                             else if (EnumClz.equals(cls_super) && !cls.class.getEnclosingClass() && IsVaildEnumCls(cls)){
                                 // 这里不能用WireEnum判断 因为编译器实际上把它优化成Enum了 via @zsh

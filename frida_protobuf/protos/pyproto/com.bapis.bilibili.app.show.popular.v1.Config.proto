@@ -12,4 +12,5 @@ message Config {
     repeated EntranceShow top_items = 5;
     optional string head_image = 6;
     repeated EntranceShow page_items = 7;
+    optional int64 hit = 8;
 }

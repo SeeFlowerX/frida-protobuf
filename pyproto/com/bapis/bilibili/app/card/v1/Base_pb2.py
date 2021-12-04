@@ -11,11 +11,12 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.bapis.bilibili.app.card.v1 import Args_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Args__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import UpArgs_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_UpArgs__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import AdInfo_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_AdInfo__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import Mask_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Mask__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import Button_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Button__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import ThreePoint_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ThreePoint__pb2
-from pyproto.com.bapis.bilibili.app.card.v1 import Mask_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Mask__pb2
-from pyproto.com.bapis.bilibili.app.card.v1 import AdInfo_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_AdInfo__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import Args_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Args__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import PlayerArgs_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_PlayerArgs__pb2
 
 
@@ -25,9 +26,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n1pyproto/com.bapis.bilibili.app.card.v1.Base.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Args.proto\x1a\x33pyproto/com.bapis.bilibili.app.card.v1.Button.proto\x1a\x37pyproto/com.bapis.bilibili.app.card.v1.ThreePoint.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Mask.proto\x1a\x33pyproto/com.bapis.bilibili.app.card.v1.AdInfo.proto\x1a\x37pyproto/com.bapis.bilibili.app.card.v1.PlayerArgs.proto\"\xee\x05\n\x04\x42\x61se\x12\x16\n\tcard_type\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x16\n\tcard_goto\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x11\n\x04goto\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x12\n\x05param\x18\x04 \x01(\tH\x03\x88\x01\x01\x12\x12\n\x05\x63over\x18\x05 \x01(\tH\x04\x88\x01\x01\x12\x12\n\x05title\x18\x06 \x01(\tH\x05\x88\x01\x01\x12\x10\n\x03uri\x18\x07 \x01(\tH\x06\x88\x01\x01\x12\x44\n\x0bthree_point\x18\x08 \x01(\x0b\x32*.com.bapis.bilibili.app.card.v1.ThreePointH\x07\x88\x01\x01\x12\x37\n\x04\x61rgs\x18\t \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.ArgsH\x08\x88\x01\x01\x12\x44\n\x0bplayer_args\x18\n \x01(\x0b\x32*.com.bapis.bilibili.app.card.v1.PlayerArgsH\t\x88\x01\x01\x12\x10\n\x03idx\x18\x0b \x01(\x03H\n\x88\x01\x01\x12<\n\x07\x61\x64_info\x18\x0c \x01(\x0b\x32&.com.bapis.bilibili.app.card.v1.AdInfoH\x0b\x88\x01\x01\x12\x37\n\x04mask\x18\r \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.MaskH\x0c\x88\x01\x01\x12\x16\n\tfrom_type\x18\x0e \x01(\tH\r\x88\x01\x01\x12@\n\x0b\x64\x65sc_button\x18\x11 \x01(\x0b\x32&.com.bapis.bilibili.app.card.v1.ButtonH\x0e\x88\x01\x01\x42\x0c\n\n_card_typeB\x0c\n\n_card_gotoB\x07\n\x05_gotoB\x08\n\x06_paramB\x08\n\x06_coverB\x08\n\x06_titleB\x06\n\x04_uriB\x0e\n\x0c_three_pointB\x07\n\x05_argsB\x0e\n\x0c_player_argsB\x06\n\x04_idxB\n\n\x08_ad_infoB\x07\n\x05_maskB\x0c\n\n_from_typeB\x0e\n\x0c_desc_buttonb\x06proto3'
+  serialized_pb=b'\n1pyproto/com.bapis.bilibili.app.card.v1.Base.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x33pyproto/com.bapis.bilibili.app.card.v1.UpArgs.proto\x1a\x33pyproto/com.bapis.bilibili.app.card.v1.AdInfo.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Mask.proto\x1a\x33pyproto/com.bapis.bilibili.app.card.v1.Button.proto\x1a\x37pyproto/com.bapis.bilibili.app.card.v1.ThreePoint.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Args.proto\x1a\x37pyproto/com.bapis.bilibili.app.card.v1.PlayerArgs.proto\"\xb8\x06\n\x04\x42\x61se\x12\x16\n\tcard_type\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x16\n\tcard_goto\x18\x02 \x01(\tH\x01\x88\x01\x01\x12\x11\n\x04goto\x18\x03 \x01(\tH\x02\x88\x01\x01\x12\x12\n\x05param\x18\x04 \x01(\tH\x03\x88\x01\x01\x12\x12\n\x05\x63over\x18\x05 \x01(\tH\x04\x88\x01\x01\x12\x12\n\x05title\x18\x06 \x01(\tH\x05\x88\x01\x01\x12\x10\n\x03uri\x18\x07 \x01(\tH\x06\x88\x01\x01\x12\x44\n\x0bthree_point\x18\x08 \x01(\x0b\x32*.com.bapis.bilibili.app.card.v1.ThreePointH\x07\x88\x01\x01\x12\x37\n\x04\x61rgs\x18\t \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.ArgsH\x08\x88\x01\x01\x12\x44\n\x0bplayer_args\x18\n \x01(\x0b\x32*.com.bapis.bilibili.app.card.v1.PlayerArgsH\t\x88\x01\x01\x12\x10\n\x03idx\x18\x0b \x01(\x03H\n\x88\x01\x01\x12<\n\x07\x61\x64_info\x18\x0c \x01(\x0b\x32&.com.bapis.bilibili.app.card.v1.AdInfoH\x0b\x88\x01\x01\x12\x37\n\x04mask\x18\r \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.MaskH\x0c\x88\x01\x01\x12\x16\n\tfrom_type\x18\x0e \x01(\tH\r\x88\x01\x01\x12@\n\x0b\x64\x65sc_button\x18\x11 \x01(\x0b\x32&.com.bapis.bilibili.app.card.v1.ButtonH\x0e\x88\x01\x01\x12<\n\x07up_args\x18\x13 \x01(\x0b\x32&.com.bapis.bilibili.app.card.v1.UpArgsH\x0f\x88\x01\x01\x42\x0c\n\n_card_typeB\x0c\n\n_card_gotoB\x07\n\x05_gotoB\x08\n\x06_paramB\x08\n\x06_coverB\x08\n\x06_titleB\x06\n\x04_uriB\x0e\n\x0c_three_pointB\x07\n\x05_argsB\x0e\n\x0c_player_argsB\x06\n\x04_idxB\n\n\x08_ad_infoB\x07\n\x05_maskB\x0c\n\n_from_typeB\x0e\n\x0c_desc_buttonB\n\n\x08_up_argsb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Args__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Button__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ThreePoint__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Mask__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_AdInfo__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_PlayerArgs__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_UpArgs__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_AdInfo__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Mask__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Button__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ThreePoint__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Args__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_PlayerArgs__pb2.DESCRIPTOR,])
 
 
 
@@ -145,6 +146,13 @@ _BASE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='up_args', full_name='com.bapis.bilibili.app.card.v1.Base.up_args', index=15,
+      number=19, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -231,9 +239,14 @@ _BASE = _descriptor.Descriptor(
       index=14, containing_type=None,
       create_key=_descriptor._internal_create_key,
     fields=[]),
+    _descriptor.OneofDescriptor(
+      name='_up_args', full_name='com.bapis.bilibili.app.card.v1.Base._up_args',
+      index=15, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
-  serialized_start=408,
-  serialized_end=1158,
+  serialized_start=461,
+  serialized_end=1285,
 )
 
 _BASE.fields_by_name['three_point'].message_type = pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ThreePoint__pb2._THREEPOINT
@@ -242,6 +255,7 @@ _BASE.fields_by_name['player_args'].message_type = pyproto_dot_com_dot_bapis_dot
 _BASE.fields_by_name['ad_info'].message_type = pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_AdInfo__pb2._ADINFO
 _BASE.fields_by_name['mask'].message_type = pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Mask__pb2._MASK
 _BASE.fields_by_name['desc_button'].message_type = pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Button__pb2._BUTTON
+_BASE.fields_by_name['up_args'].message_type = pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_UpArgs__pb2._UPARGS
 _BASE.oneofs_by_name['_card_type'].fields.append(
   _BASE.fields_by_name['card_type'])
 _BASE.fields_by_name['card_type'].containing_oneof = _BASE.oneofs_by_name['_card_type']
@@ -287,6 +301,9 @@ _BASE.fields_by_name['from_type'].containing_oneof = _BASE.oneofs_by_name['_from
 _BASE.oneofs_by_name['_desc_button'].fields.append(
   _BASE.fields_by_name['desc_button'])
 _BASE.fields_by_name['desc_button'].containing_oneof = _BASE.oneofs_by_name['_desc_button']
+_BASE.oneofs_by_name['_up_args'].fields.append(
+  _BASE.fields_by_name['up_args'])
+_BASE.fields_by_name['up_args'].containing_oneof = _BASE.oneofs_by_name['_up_args']
 DESCRIPTOR.message_types_by_name['Base'] = _BASE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

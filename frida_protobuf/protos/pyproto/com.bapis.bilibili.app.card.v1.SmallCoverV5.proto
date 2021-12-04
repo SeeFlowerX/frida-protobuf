@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package com.bapis.bilibili.app.card.v1;
 
-import "pyproto/com.bapis.bilibili.app.card.v1.HotwordEntrance.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.Up.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
+import "pyproto/com.bapis.bilibili.app.card.v1.HotwordEntrance.proto";
 
 message SmallCoverV5 {
     optional Base base = 1;
@@ -20,4 +20,6 @@ message SmallCoverV5 {
     optional int32 right_icon_1 = 10;
     optional int32 right_icon_2 = 11;
     optional ReasonStyle left_corner_mark_style = 12;
+    optional string cover_right_text_content_description = 13;
+    optional string right_desc_1_content_description = 14;
 }

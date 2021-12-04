@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package com.bapis.bilibili.app.card.v1;
 
+import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.Base.proto";
 import "pyproto/com.bapis.bilibili.app.card.v1.TwoItemHV1Item.proto";
-import "pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto";
 
 message ThreeItemAllV2 {
     optional Base base = 1;

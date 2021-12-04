@@ -11,8 +11,8 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 from pyproto.com.bapis.bilibili.app.card.v1 import ReasonStyle_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2
+from pyproto.com.bapis.bilibili.app.card.v1 import Base_pb2 as pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -21,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n:pyproto/com.bapis.bilibili.app.card.v1.MiddleCoverV3.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\x1a\x38pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto\"\xb4\x01\n\rMiddleCoverV3\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12K\n\x11\x63over_badge_style\x18\x04 \x01(\x0b\x32+.com.bapis.bilibili.app.card.v1.ReasonStyleH\x01\x88\x01\x01\x42\x07\n\x05_baseB\x14\n\x12_cover_badge_styleb\x06proto3'
+  serialized_pb=b'\n:pyproto/com.bapis.bilibili.app.card.v1.MiddleCoverV3.proto\x12\x1e\x63om.bapis.bilibili.app.card.v1\x1a\x38pyproto/com.bapis.bilibili.app.card.v1.ReasonStyle.proto\x1a\x31pyproto/com.bapis.bilibili.app.card.v1.Base.proto\"\xb4\x01\n\rMiddleCoverV3\x12\x37\n\x04\x62\x61se\x18\x01 \x01(\x0b\x32$.com.bapis.bilibili.app.card.v1.BaseH\x00\x88\x01\x01\x12K\n\x11\x63over_badge_style\x18\x04 \x01(\x0b\x32+.com.bapis.bilibili.app.card.v1.ReasonStyleH\x01\x88\x01\x01\x42\x07\n\x05_baseB\x14\n\x12_cover_badge_styleb\x06proto3'
   ,
-  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2.DESCRIPTOR,])
+  dependencies=[pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_ReasonStyle__pb2.DESCRIPTOR,pyproto_dot_com_dot_bapis_dot_bilibili_dot_app_dot_card_dot_v1_dot_Base__pb2.DESCRIPTOR,])
 
 
 

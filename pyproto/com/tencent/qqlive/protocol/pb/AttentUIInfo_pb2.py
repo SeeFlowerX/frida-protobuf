@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n9pyproto/com.tencent.qqlive.protocol.pb.AttentUIInfo.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Poster.proto\"\xde\x01\n\x0c\x41ttentUIInfo\x12\x1b\n\x0eunattent_title\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x19\n\x0c\x61ttent_title\x18\x02 \x01(\tH\x01\x88\x01\x01\x12;\n\x06poster\x18\x03 \x01(\x0b\x32&.com.tencent.qqlive.protocol.pb.PosterH\x02\x88\x01\x01\x12\x19\n\x0crelease_time\x18\x04 \x01(\x02H\x03\x88\x01\x01\x42\x11\n\x0f_unattent_titleB\x0f\n\r_attent_titleB\t\n\x07_posterB\x0f\n\r_release_timeb\x06proto3'
+  serialized_pb=b'\n9pyproto/com.tencent.qqlive.protocol.pb.AttentUIInfo.proto\x12\x1e\x63om.tencent.qqlive.protocol.pb\x1a\x33pyproto/com.tencent.qqlive.protocol.pb.Poster.proto\"\xb4\x02\n\x0c\x41ttentUIInfo\x12\x1b\n\x0eunattent_title\x18\x01 \x01(\tH\x00\x88\x01\x01\x12\x19\n\x0c\x61ttent_title\x18\x02 \x01(\tH\x01\x88\x01\x01\x12;\n\x06poster\x18\x03 \x01(\x0b\x32&.com.tencent.qqlive.protocol.pb.PosterH\x02\x88\x01\x01\x12\x19\n\x0crelease_time\x18\x04 \x01(\x02H\x03\x88\x01\x01\x12\x42\n\rattent_poster\x18\x05 \x01(\x0b\x32&.com.tencent.qqlive.protocol.pb.PosterH\x04\x88\x01\x01\x42\x11\n\x0f_unattent_titleB\x0f\n\r_attent_titleB\t\n\x07_posterB\x0f\n\r_release_timeB\x10\n\x0e_attent_posterb\x06proto3'
   ,
   dependencies=[pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2.DESCRIPTOR,])
 
@@ -63,6 +63,13 @@ _ATTENTUIINFO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='attent_poster', full_name='com.tencent.qqlive.protocol.pb.AttentUIInfo.attent_poster', index=4,
+      number=5, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -94,12 +101,18 @@ _ATTENTUIINFO = _descriptor.Descriptor(
       index=3, containing_type=None,
       create_key=_descriptor._internal_create_key,
     fields=[]),
+    _descriptor.OneofDescriptor(
+      name='_attent_poster', full_name='com.tencent.qqlive.protocol.pb.AttentUIInfo._attent_poster',
+      index=4, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=147,
-  serialized_end=369,
+  serialized_end=455,
 )
 
 _ATTENTUIINFO.fields_by_name['poster'].message_type = pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2._POSTER
+_ATTENTUIINFO.fields_by_name['attent_poster'].message_type = pyproto_dot_com_dot_tencent_dot_qqlive_dot_protocol_dot_pb_dot_Poster__pb2._POSTER
 _ATTENTUIINFO.oneofs_by_name['_unattent_title'].fields.append(
   _ATTENTUIINFO.fields_by_name['unattent_title'])
 _ATTENTUIINFO.fields_by_name['unattent_title'].containing_oneof = _ATTENTUIINFO.oneofs_by_name['_unattent_title']
@@ -112,6 +125,9 @@ _ATTENTUIINFO.fields_by_name['poster'].containing_oneof = _ATTENTUIINFO.oneofs_b
 _ATTENTUIINFO.oneofs_by_name['_release_time'].fields.append(
   _ATTENTUIINFO.fields_by_name['release_time'])
 _ATTENTUIINFO.fields_by_name['release_time'].containing_oneof = _ATTENTUIINFO.oneofs_by_name['_release_time']
+_ATTENTUIINFO.oneofs_by_name['_attent_poster'].fields.append(
+  _ATTENTUIINFO.fields_by_name['attent_poster'])
+_ATTENTUIINFO.fields_by_name['attent_poster'].containing_oneof = _ATTENTUIINFO.oneofs_by_name['_attent_poster']
 DESCRIPTOR.message_types_by_name['AttentUIInfo'] = _ATTENTUIINFO
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package com.tencent.qqlive.protocol.pb;
 
-import "pyproto/com.tencent.qqlive.protocol.pb.Attent.proto";
-import "pyproto/com.tencent.qqlive.protocol.pb.Action.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.VideoIdKeyValueSet.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.Poster.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.Attent.proto";
+import "pyproto/com.tencent.qqlive.protocol.pb.Action.proto";
 import "pyproto/com.tencent.qqlive.protocol.pb.Section.proto";
 
 message ChangeSectionResponse {
