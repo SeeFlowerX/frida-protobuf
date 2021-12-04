@@ -116,6 +116,8 @@ let TypeConfig: tsMap = {
     "String": "string",
     "boolean": "bool",
     "Boolean": "bool",
+    "double": "double",
+    "float": "float",
 }
 
 function generate_messagelite_fields(cls: any){
